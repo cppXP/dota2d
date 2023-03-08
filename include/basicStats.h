@@ -1,3 +1,5 @@
+#ifndef DOTA2D_BASIC_STATS_HEADER
+#define DOTA2D_BASIC_STATS_HEADER
 #include "baseAttack.h"
 #include "baseHealth.h"
 #include "baseSprite.h"
@@ -113,3 +115,5 @@ namespace dota2d
       void printBasic_stats();
   };
 }
+
+#endif

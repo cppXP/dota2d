@@ -1,5 +1,5 @@
-#ifndef DOTA2D_BASE_SPRITE_HEADER
-#define DOTA2D_BASE_SPRITE_HEADER
+#ifndef DOTA2D_BASE_HEALTH_HEADER
+#define DOTA2D_BASE_HEALTH_HEADER
 #include <SFML/Graphics.hpp>
 #include <iostream>
 

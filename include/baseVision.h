@@ -1,5 +1,5 @@
-get#ifndef DOTA2D_BASE_ATTACK_HEADER
-#define DOTA2D_BASE_ATTACK_HEADER
+#ifndef DOTA2D_BASE_VISION_HEADER
+#define DOTA2D_BASE_VISION_HEADER
 #include <iostream>
 
 namespace dota2d
