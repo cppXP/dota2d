@@ -1,16 +1,16 @@
 #ifndef DOTA2D_BASIC_STATS_HEADER
 #define DOTA2D_BASIC_STATS_HEADER
-#include "baseAttack.h"
-#include "baseHealth.h"
-#include "baseSprite.h"
-#include "baseVision.h"
+#include "../include-level-1/baseAttack.h"
+#include "../include-level-1/baseHealth.h"
+#include "../include-level-1/baseSprite.h"
+#include "../include-level-1/baseVision.h"
 
 namespace dota2d
 {
   class BasicStats : public BaseAttack, public BaseSprite, public BaseVision,  public BaseHealth
   {
     public:
-      BasicStats() : BaseAttack() : BaseSprite() : BaseVision() : BaseHealth()
+      BasicStats() : BaseAttack() , BaseSprite() , BaseVision() , BaseHealth()
       {
         setStun_duration(0);
         setSilence_duration(0);
@@ -29,7 +29,7 @@ namespace dota2d
       BasicStats(int _stun_d, int _silence_d, int _unattack_d, int _untarget_d,
                  int _teleport_cd,int _move_speed,int _teleport_ct,
                  int _gold_ps,int _gold,
-                 int _intel,int _streng,int _agili) : BaseAttack() : BaseSprite() : BaseVision() : BaseHealth()
+                 int _intel,int _streng,int _agili) : BaseAttack() , BaseSprite() , BaseVision() , BaseHealth()
                  {
                    setTeleport_cooldown(_teleport_cd);
                    setMovement_speed(_move_speed);
@@ -48,11 +48,11 @@ namespace dota2d
                  int _attackrange,int _attackspeed,int _physicD,int _magicD, //for baseAttack
                  std::string _textureTxt, sf::Vector2f _position, //for baseSprite
                  int _dayv, int _dayob, int _nightv, int _nightob, invisibleType _invistype, int _invisduration,  //for baseVision
-                 int _hp,int _maxhp, float _hpregen, int _mana, int _maxmana, float _manaregen, float _magicR, float _physicR, //for baseHealth
+                 int _hp,int _maxhp, float _hpregen, int _mana, int _maxmana, float _manaregen, float _magicR, float _physicR //for baseHealth
                 ): BaseAttack(_attackrange,_attackspeed,_physicD,_magicD)
-                 : BaseSprite(_textureTxt,_position)
-                 : BaseVision(_dayv,_dayob,_nightv,_nightob,_invistype,_invisduration)
-                 : BaseHealth(_hp,_maxhp,_hpregen,_mana,_max_mana,_manaregen,_magicR,_physicR)
+                 , BaseSprite(_textureTxt,_position)
+                 , BaseVision(_dayv,_dayob,_nightv,_nightob,_invistype,_invisduration)
+                 , BaseHealth(_hp,_maxhp,_hpregen,_mana,_maxmana,_manaregen,_magicR,_physicR)
                 {
                   setTeleport_cooldown(_teleport_cd);
                   setMovement_speed(_move_speed);
@@ -108,7 +108,7 @@ namespace dota2d
       int getTeleport_cast_time();
       int getGold_per_second();
       int getGold();
-      int getelligence();
+      int getIntelligence();
       int getAgility();
       int getStrength();
 

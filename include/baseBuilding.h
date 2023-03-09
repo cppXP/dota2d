@@ -1,7 +1,7 @@
 #ifndef DOTA2D_BASE_BUILDING_HEADER
 #define DOTA2D_BASE_BUILDING_HEADER
 #include <iostream>
-#include "baseSprite.h"
+#include "../include-level-1/baseSprite.h"
 
 namespace dota2d
 {
@@ -10,7 +10,7 @@ namespace dota2d
     None, //is for game objects. e.g SecretShop/Roshan
     Dire,
     Radiant
-  }
+  };
 
   class BaseBuilding : public BaseSprite
   {
@@ -28,7 +28,7 @@ namespace dota2d
         setAttackable(_attackable);
 
       }
-      BaseBuilding(TeamSide _teamValue, bool _attackable
+      BaseBuilding(TeamSide _teamValue, bool _attackable,
                    std::string _texture, sf::Vector2f _pos)
                    : BaseSprite(_texture,_pos)
       {

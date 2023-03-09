@@ -3,6 +3,7 @@
 #include <SFML/Graphics.hpp>
 #include <iostream>
 
+
 namespace dota2d
 {
   class BaseHealth
@@ -37,7 +38,7 @@ namespace dota2d
       void setMagicRasistant(float);
       void setPhysicRasistant(float);
       float getPhysicRasistant();
-      flaot getMagicRasistant();
+      float getMagicRasistant();
 
       //health
       void setHitpoint(int);
@@ -47,7 +48,10 @@ namespace dota2d
       float getHitpointRegen();
       int getMaxHitpoint();
 
+
+      //actions
       void printHealth_stats();
+
   };
 
 }

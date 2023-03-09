@@ -5,7 +5,7 @@ void dota2d::BaseBuilding::setTeamSide(TeamSide _team)
   m_team = _team;
 }
 
-TeamSide dota2d::BaseBuilding::getTeamSide()
+dota2d::TeamSide dota2d::BaseBuilding::getTeamSide()
 {
   return m_team;
 }

@@ -15,21 +15,21 @@ dota2d::BaseSprite::BaseSprite
 void dota2d::BaseSprite::setTexture(std::string _texture)
 {
   m_texture_path = _texture;
-  if(!m_texture.loadFromFile(_texture.c_str()))
+  if(!m_texture.loadFromFile(m_texture_path))
   {
-    std::cout << MESSAGE_TEXT_TEXTURE_FAILED_TO_LOAD getTexture_path() << std::endl;
-    if(!m_texture.loadFromFile(ASSEST_DEFAULT_TEXTURE.c_str()))
+    std::cout << MESSAGE_TEXT_TEXTURE_FAILED_TO_LOAD << getTexture_path() << std::endl;
+    if(!m_texture.loadFromFile(ASSEST_DEFAULT_TEXTURE))
       std::cout << MESSAGE_TEXT_TEXUTRE_DEFAULT_CANT_LOAD ASSEST_DEFAULT_TEXTURE << std::endl;
     else
     {
       std::cout << MESSAGE_TEXT_TEXTURE_DEFAULT_LOADED ASSEST_DEFAULT_TEXTURE << std::endl;
-      m_sprite.setTexture(m_texture_path.c_str());
+      m_sprite.setTexture(m_texture);
     }
   }
   else
   {
     std::cout << MESSAGE_TEXT_TEXTURE_SUCCESS_LOADED << getTexture_path() << std::endl;
-    m_sprite.setTexture(m_texture_path.c_str());
+    m_sprite.setTexture(m_texture);
   }
 }
 
@@ -52,7 +52,7 @@ sf::Sprite dota2d::BaseSprite::getSprite()
 {
   return m_sprite;
 }
-std:string dota2d::BaseSrite::getTexture_path()
+std::string dota2d::BaseSprite::getTexture_path()
 {
   return m_texture_path;
 }

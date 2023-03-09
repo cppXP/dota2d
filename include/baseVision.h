@@ -14,7 +14,7 @@ namespace dota2d
     FromCreepEnemy,
     FromCreepsWards,
     FromAll
-  }
+  };
 
   class BaseVision
   {
