@@ -1,7 +1,7 @@
 #ifndef DOTA2D_BASE_BUILDING_HEADER
 #define DOTA2D_BASE_BUILDING_HEADER
 #include <iostream>
-#include "baseSprite.h"
+#include "baseSprite.h" //string included
 
 namespace dota2d
 {

@@ -112,6 +112,7 @@ namespace dota2d
       int getAgility() const;
       int getStrength() const;
 
+      //actions
       void printBasic_stats() const;
   };
 }

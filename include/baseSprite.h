@@ -1,6 +1,7 @@
 #ifndef DOTA2D_BASE_SPRITE_HEADER
 #define DOTA2D_BASE_SPRITE_HEADER
 #include <iostream>
+#include <string>
 #include <SFML/Graphics.hpp>
 #include "assets-config.h"
 
