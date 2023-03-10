@@ -1,4 +1,6 @@
 #define ASSEST_DEFAULT_TEXTURE "../assets/default_texture.png"
+
+
 #define MESSAGE_TEXT_TEXTURE_FAILED_TO_LOAD "can not load texture "
 #define MESSAGE_TEXT_TEXTURE_SUCCESS_LOADED "texture loaded successfully "
 

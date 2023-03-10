@@ -122,7 +122,7 @@ int dota2d::BasicStats::getStrength() const
 void dota2d::BasicStats::printBasic_stats() const
 {
   printHealth_stats();
-  printAttack_stats();
+  // printAttack_stats();
   printVision_stats();
   printSprite_stats();
 

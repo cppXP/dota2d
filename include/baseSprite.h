@@ -12,6 +12,7 @@ namespace dota2d
     public:
       BaseSprite();
       BaseSprite(std::string, sf::Vector2f);
+      sf::Sprite getSprite() const;
 
     protected:
       std::string m_texture_path;
@@ -25,7 +26,6 @@ namespace dota2d
 
       sf::Vector2f getPosition() const;
       sf::Texture getTexture() const;
-      sf::Sprite getSprite() const;
       std::string getTexture_path() const;
 
       void printSprite_stats() const;
