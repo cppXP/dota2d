@@ -40,23 +40,23 @@ void dota2d::BaseSprite::setPosition(sf::Vector2f _pos)
 }
 
 
-sf::Vector2f dota2d::BaseSprite::getPosition()
+sf::Vector2f dota2d::BaseSprite::getPosition() const
 {
   return m_position;
 }
-sf::Texture dota2d::BaseSprite::getTexture()
+sf::Texture dota2d::BaseSprite::getTexture() const
 {
   return m_texture;
 }
-sf::Sprite dota2d::BaseSprite::getSprite()
+sf::Sprite dota2d::BaseSprite::getSprite() const
 {
   return m_sprite;
 }
-std::string dota2d::BaseSprite::getTexture_path()
+std::string dota2d::BaseSprite::getTexture_path() const
 {
   return m_texture_path;
 }
-void dota2d::BaseSprite::printSprite_stats()
+void dota2d::BaseSprite::printSprite_stats() const
 {
   std::cout << "\n BaseSprite::printSprite_stats():"
        << "\n texture-path = " << getTexture_path()

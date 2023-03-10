@@ -43,15 +43,15 @@ void dota2d::BaseHealth::setMaxMana(int _value)
 {
   m_max_mana = _value;
 }
-int dota2d::BaseHealth::getMana()
+int dota2d::BaseHealth::getMana() const
 {
   return m_mana;
 }
-float dota2d::BaseHealth::getManaRegen()
+float dota2d::BaseHealth::getManaRegen() const
 {
   return m_mana_regen;
 }
-int dota2d::BaseHealth::getMaxMana()
+int dota2d::BaseHealth::getMaxMana() const
 {
   return m_max_mana;
 }
@@ -70,11 +70,11 @@ void dota2d::BaseHealth::setPhysicRasistant(float _value)
 {
   m_physical_rasistant = _value;
 }
-float dota2d::BaseHealth::getMagicRasistant()
+float dota2d::BaseHealth::getMagicRasistant() const
 {
   return m_magical_rasistant;
 }
-float dota2d::BaseHealth::getPhysicRasistant()
+float dota2d::BaseHealth::getPhysicRasistant() const
 {
   return m_physical_rasistant;
 }
@@ -95,20 +95,20 @@ void dota2d::BaseHealth::setMaxHitpoint(int _value)
 {
   m_max_hitpoint = _value;
 }
-int dota2d::BaseHealth::getHitpoint()
+int dota2d::BaseHealth::getHitpoint() const
 {
   return m_hitpoint;
 }
-float dota2d::BaseHealth::getHitpointRegen()
+float dota2d::BaseHealth::getHitpointRegen() const
 {
   return m_hitpoint_regen;
 }
-int dota2d::BaseHealth::getMaxHitpoint()
+int dota2d::BaseHealth::getMaxHitpoint() const
 {
   return m_max_hitpoint;
 }
 
-void dota2d::BaseHealth::printHealth_stats()
+void dota2d::BaseHealth::printHealth_stats() const
 {
   std::cout << "\n BaseHealth::printHealth_stats():"
        << "\n hitpoint = " << getHitpoint()

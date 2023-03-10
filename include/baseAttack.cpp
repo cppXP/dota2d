@@ -37,19 +37,19 @@ void dota2d::BaseAttack::setMagicalDamage(int _value)
 
 
 
-int dota2d::BaseAttack::getAttackRange()
+int dota2d::BaseAttack::getAttackRange() const
 {
   return m_attack_range;
 }
-int dota2d::BaseAttack::getAttackSpeed()
+int dota2d::BaseAttack::getAttackSpeed() const
 {
   return m_attack_speed;
 }
-int dota2d::BaseAttack::getMagicalDamage()
+int dota2d::BaseAttack::getMagicalDamage() const
 {
   return m_magical_damage;
 }
-int dota2d::BaseAttack::getPhysicalDamage()
+int dota2d::BaseAttack::getPhysicalDamage() const
 {
   return m_physical_damage;
 }

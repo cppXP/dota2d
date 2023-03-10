@@ -99,20 +99,20 @@ namespace dota2d
       void setAgility(int);
       void setStrength(int);
 
-      int getSilence_duration();
-      int getStun_duration();
-      int getUnattackable_duration();
-      int getUntargetable_duration();
-      int getTeleport_cooldown();
-      int getMovement_speed();
-      int getTeleport_cast_time();
-      int getGold_per_second();
-      int getGold();
-      int getIntelligence();
-      int getAgility();
-      int getStrength();
+      int getSilence_duration() const;
+      int getStun_duration() const;
+      int getUnattackable_duration() const;
+      int getUntargetable_duration() const;
+      int getTeleport_cooldown() const;
+      int getMovement_speed() const;
+      int getTeleport_cast_time() const;
+      int getGold_per_second() const;
+      int getGold() const;
+      int getIntelligence() const;
+      int getAgility() const;
+      int getStrength() const;
 
-      void printBasic_stats();
+      void printBasic_stats() const;
   };
 }
 

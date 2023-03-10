@@ -63,55 +63,55 @@ void dota2d::BasicStats::setStrength(int _value)
 
 
 
-int dota2d::BasicStats::getStun_duration()
+int dota2d::BasicStats::getStun_duration() const
 {
   return m_stun_duration;
 }
 
-int dota2d::BasicStats::getSilence_duration()
+int dota2d::BasicStats::getSilence_duration() const
 {
   return m_silence_duration;
 }
 
-int dota2d::BasicStats::getUntargetable_duration()
+int dota2d::BasicStats::getUntargetable_duration() const
 {
   return m_untargetable_duration;
 }
-int dota2d::BasicStats::getUnattackable_duration()
+int dota2d::BasicStats::getUnattackable_duration() const
 {
   return m_unattackable_duration;
 }
 
-int dota2d::BasicStats::getTeleport_cooldown()
+int dota2d::BasicStats::getTeleport_cooldown() const
 {
   return m_teleport_cooldown;
 }
 
-int dota2d::BasicStats::getMovement_speed()
+int dota2d::BasicStats::getMovement_speed() const
 {
   return m_movement_speed;
 }
-int dota2d::BasicStats::getTeleport_cast_time()
+int dota2d::BasicStats::getTeleport_cast_time() const
 {
   return m_teleport_cast_time;
 }
-int dota2d::BasicStats::getGold_per_second()
+int dota2d::BasicStats::getGold_per_second() const
 {
   return m_gold_per_second;
 }
-int dota2d::BasicStats::getGold()
+int dota2d::BasicStats::getGold() const
 {
   return m_gold;
 }
-int dota2d::BasicStats::getIntelligence()
+int dota2d::BasicStats::getIntelligence() const
 {
   return m_intelligence;
 }
-int dota2d::BasicStats::getAgility()
+int dota2d::BasicStats::getAgility() const
 {
   return m_agility;
 }
-int dota2d::BasicStats::getStrength()
+int dota2d::BasicStats::getStrength() const
 {
   return m_strength;
 }
@@ -119,7 +119,7 @@ int dota2d::BasicStats::getStrength()
 
 
 
-void dota2d::BasicStats::printBasic_stats()
+void dota2d::BasicStats::printBasic_stats() const
 {
   printHealth_stats();
   printAttack_stats();

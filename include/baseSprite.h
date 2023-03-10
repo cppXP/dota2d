@@ -22,12 +22,12 @@ namespace dota2d
       void setTexture(std::string);
       void setPosition(sf::Vector2f);
 
-      sf::Vector2f getPosition();
-      sf::Texture getTexture();
-      sf::Sprite getSprite();
-      std::string getTexture_path();
+      sf::Vector2f getPosition() const;
+      sf::Texture getTexture() const;
+      sf::Sprite getSprite() const;
+      std::string getTexture_path() const;
 
-      void printSprite_stats();
+      void printSprite_stats() const;
   };
 }
 

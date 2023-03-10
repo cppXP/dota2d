@@ -30,27 +30,27 @@ namespace dota2d
       void setMana(int);
       void setManaRegen(float);
       void setMaxMana(int);
-      int getMana();
-      float getManaRegen();
-      int getMaxMana();
+      int getMana() const;
+      float getManaRegen() const;
+      int getMaxMana() const;
 
       //rasistant
       void setMagicRasistant(float);
       void setPhysicRasistant(float);
-      float getPhysicRasistant();
-      float getMagicRasistant();
+      float getPhysicRasistant() const;
+      float getMagicRasistant() const;
 
       //health
       void setHitpoint(int);
       void setHitpointRegen(float);
       void setMaxHitpoint(int);
-      int getHitpoint();
-      float getHitpointRegen();
-      int getMaxHitpoint();
+      int getHitpoint() const;
+      float getHitpointRegen() const;
+      int getMaxHitpoint() const;
 
 
       //actions
-      void printHealth_stats();
+      void printHealth_stats() const;
 
   };
 

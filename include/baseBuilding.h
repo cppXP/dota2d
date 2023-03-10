@@ -43,8 +43,8 @@ namespace dota2d
       void setTeamSide(TeamSide);
       void setAttackable(bool);
 
-      bool getAttackable();
-      TeamSide getTeamSide();
+      bool getAttackable() const;
+      TeamSide getTeamSide() const;
   };
 }
 

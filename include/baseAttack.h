@@ -21,10 +21,10 @@ namespace dota2d
       void setPhysicalDamage(int);
       void setMagicalDamage(int);
 
-      int getAttackRange();
-      int getAttackSpeed();
-      int getMagicalDamage();
-      int getPhysicalDamage();
+      int getAttackRange() const;
+      int getAttackSpeed() const;
+      int getMagicalDamage() const;
+      int getPhysicalDamage() const;
 
       void printAttack_stats();
   };

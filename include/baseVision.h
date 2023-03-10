@@ -39,14 +39,14 @@ namespace dota2d
       void setInvisible_duration(int);
       void setInvisible_type(invisibleType);
 
-      int getDay_vision();
-      int getDay_observe_vision();
-      int getNight_vision();
-      int getNight_observe_vision();
-      int getInvisible_duration();
-      invisibleType getInvisibleType();
+      int getDay_vision() const;
+      int getDay_observe_vision() const;
+      int getNight_vision() const;
+      int getNight_observe_vision() const;
+      int getInvisible_duration() const;
+      invisibleType getInvisibleType() const;
 
-      void printVision_stats();
+      void printVision_stats() const;
   };
 }
 

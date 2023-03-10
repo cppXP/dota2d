@@ -55,33 +55,33 @@ void dota2d::BaseVision::setInvisible_type(invisibleType _value)
 
 
 
-int dota2d::BaseVision::getDay_vision()
+int dota2d::BaseVision::getDay_vision() const
 {
   return m_day_vision;
 }
-int dota2d::BaseVision::getDay_observe_vision()
+int dota2d::BaseVision::getDay_observe_vision() const
 {
   return m_day_observe_vision;
 }
-int dota2d::BaseVision::getNight_vision()
+int dota2d::BaseVision::getNight_vision() const
 {
   return m_night_vision;
 }
-int dota2d::BaseVision::getNight_observe_vision()
+int dota2d::BaseVision::getNight_observe_vision() const
 {
   return m_night_observe_vision;
 }
-int dota2d::BaseVision::getInvisible_duration()
+int dota2d::BaseVision::getInvisible_duration() const
 {
   return m_invisible_duration;
 }
-dota2d::invisibleType dota2d::BaseVision::getInvisibleType()
+dota2d::invisibleType dota2d::BaseVision::getInvisibleType() const
 {
   return m_invisible_type;
 }
 
 
-void dota2d::BaseVision::printVision_stats()
+void dota2d::BaseVision::printVision_stats() const
 {
   std::cout << "\n baseVision::printVision_stats():"
        << "\n day-vision = " << getDay_vision()
