@@ -1,7 +1,7 @@
 #ifndef DOTA2D_BASE_BUILDING_HEADER
 #define DOTA2D_BASE_BUILDING_HEADER
 #include <iostream>
-#include "../include-level-1/baseSprite.h"
+#include "baseSprite.h"
 
 namespace dota2d
 {
@@ -45,6 +45,66 @@ namespace dota2d
 
       bool getAttackable() const;
       TeamSide getTeamSide() const;
+
+
+
+    //others
+    public:
+      class BuildingUnattackable : public BaseBuilding
+      {
+          protected:
+            bool m_captureable;
+
+          public:
+            class SecretShop : public BuildingUnattackable
+            {
+
+            };
+            class Shrine : public BuildingUnattackable
+            {
+
+            };
+            class Outpost : public BuildingUnattackable
+            {
+
+            };
+      };
+
+      class BuildingAttackable : public BaseHealth
+      {
+          public:
+            class Ancient : public BuildingAttackable
+            {
+
+            };
+
+            class Pillar : public BuildingAttackable
+            {
+
+            };
+
+            class Barracks : public BuildingAttackable
+            {
+
+            };
+
+      };
+
+      class BuildingAttacker : public BaseAttack
+      {
+          public:
+            class Tower : public BuildingAttacker, public BuildingAttackable
+            {
+
+            };
+
+            class Fountain : public BuildingAttacker, public BuildingUnattackable
+            {
+
+            };
+      };
+
+
   };
 }
 

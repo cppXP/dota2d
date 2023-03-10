@@ -2,7 +2,7 @@
 #define DOTA2D_BASE_SPRITE_HEADER
 #include <iostream>
 #include <SFML/Graphics.hpp>
-#include "../include-level-0/assets-config.h"
+#include "assets-config.h"
 
 namespace dota2d
 {

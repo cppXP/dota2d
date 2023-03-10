@@ -1,9 +1,9 @@
 #ifndef DOTA2D_BASIC_STATS_HEADER
 #define DOTA2D_BASIC_STATS_HEADER
-#include "../include-level-1/baseAttack.h"
-#include "../include-level-1/baseHealth.h"
-#include "../include-level-1/baseSprite.h"
-#include "../include-level-1/baseVision.h"
+#include "baseAttack.h"
+#include "baseHealth.h"
+#include "baseSprite.h"
+#include "baseVision.h"
 
 namespace dota2d
 {
