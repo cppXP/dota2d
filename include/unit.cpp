@@ -36,7 +36,7 @@ sf::Vector2f dota2d::Unit::getSpawn_position() const
 //action
 void dota2d::Unit::printUnit_stats() const
 {
-  std::cout << "\n Unit::printUnit_stats : "
+  cout << "\n Unit::printUnit_stats : "
        << "\n name = " << getName()
        << "\n spawn-position = x: " << getSpawn_position().x << " y: " << getSpawn_position().y
        << std::endl;
