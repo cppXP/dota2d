@@ -48,62 +48,6 @@ namespace dota2d
 
 
 
-    //others
-    public:
-      class BuildingUnattackable : public BaseBuilding
-      {
-          protected:
-            bool m_captureable;
-
-          public:
-            class SecretShop : public BuildingUnattackable
-            {
-
-            };
-            class Shrine : public BuildingUnattackable
-            {
-
-            };
-            class Outpost : public BuildingUnattackable
-            {
-
-            };
-      };
-
-      class BuildingAttackable : public BaseHealth
-      {
-          public:
-            class Ancient : public BuildingAttackable
-            {
-
-            };
-
-            class Pillar : public BuildingAttackable
-            {
-
-            };
-
-            class Barracks : public BuildingAttackable
-            {
-
-            };
-
-      };
-
-      class BuildingAttacker : public BaseAttack
-      {
-          public:
-            class Tower : public BuildingAttacker, public BuildingAttackable
-            {
-
-            };
-
-            class Fountain : public BuildingAttacker, public BuildingUnattackable
-            {
-
-            };
-      };
-
 
   };
 }
