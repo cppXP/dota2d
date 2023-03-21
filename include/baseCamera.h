@@ -8,17 +8,11 @@ namespace dota2d
   class BaseCamera
   {
   public:
-    BaseCamera()
-    {
-
-    }
+    BaseCamera();
     BaseCamera(sf::Vector2i,
                float,float,
                int,int,
-               sf::FloatRect)
-   {
-
-   }
+               sf::FloatRect);
 
    void setCamera_position(sf::Vector2i);
    void setCamera_zoom(int);
@@ -38,6 +32,8 @@ namespace dota2d
 
    //actions
    void printCamera_stats();
+
+   
   protected:
     sf::Vector2i m_camera_position;
     float m_camera_zoom;
