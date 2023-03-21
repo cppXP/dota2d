@@ -12,25 +12,21 @@ namespace dota2d
   public:
     BaseWindow();
 
-    BaseWindow(int,int,
-               std::string,sf::Style);
+    BaseWindow(int,int,std::string);
 
-    BaseWindow(int,int,std::string,
-               sf::Style,sf::Vector2i);
+    BaseWindow(int,int,std::string,sf::Vector2i);
 
 
     void setWindow_height(int);
     void setWindow_width(int);
-    void setWindow_style(sf::Style);
     void setWindow_title(std::string);
     void setWindow_position(sf::Vector2i);
 
 
     std::string getWindow_title();
-    sf::Style getWindow_style();
     int getWindow_width();
     int getWindow_height();
-    sf::RenderWindow getWindow();
+    // sf::RenderWindow getWindow();
     sf::Vector2i getWindow_position();
 
     //actions
@@ -40,7 +36,6 @@ namespace dota2d
     int m_window_height;
     int m_window_width;
     std::string m_window_title;
-    sf::Style m_window_style;
     sf::Vector2i m_window_position;
     sf::RenderWindow m_window;
   };

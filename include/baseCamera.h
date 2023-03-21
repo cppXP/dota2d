@@ -15,8 +15,8 @@ namespace dota2d
                sf::FloatRect);
 
    void setCamera_position(sf::Vector2i);
-   void setCamera_zoom(int);
-   void setCamera_rotate(int);
+   void setCamera_zoom(float);
+   void setCamera_rotate(float);
    void setCamera_speed(int);
    void setCamera_mouseBorder(int);
    void setCamera_viewport(sf::FloatRect);
@@ -33,7 +33,7 @@ namespace dota2d
    //actions
    void printCamera_stats();
 
-   
+
   protected:
     sf::Vector2i m_camera_position;
     float m_camera_zoom;
@@ -41,6 +41,8 @@ namespace dota2d
     int m_camera_speed;
     int m_camera_mouseBorder;
     sf::FloatRect m_camera_viewport;
+    sf::View m_camera;
+
 
   };
 }

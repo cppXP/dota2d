@@ -99,7 +99,7 @@ namespace dota2d
       AbilityType getAbilityMode();
       TargetType getTargetMode();
       int getCooldown();
-      int getRadius()
+      int getRadius();
       int getCastTime();
 
 

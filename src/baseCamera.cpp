@@ -3,7 +3,7 @@
 
 dota2d::BaseCamera::BaseCamera()
 {
-  setCamera_position(0,0);
+  setCamera_position(sf::Vector2i(0,0));
   setCamera_zoom(0.0);
   setCamera_rotate(0.0);
   setCamera_speed(5);
@@ -24,6 +24,7 @@ dota2d::BaseCamera::BaseCamera(
   setCamera_speed(c_speed);
   setCamera_mouseBorder(c_mouseBorder);
   setCamera_viewport(c_viewport);
+
 }
 
 
@@ -91,27 +92,11 @@ float dota2d::BaseCamera::getCamera_rotate()
 void dota2d::BaseCamera::printCamera_stats()
 {
   std::cout << "baseCamera::PrintCamera_stats(): "
-  << "\n camera_pos = " << getCamera_position()
-  << "\n camera_zoom = " << getCamera_zoom()
-  << "\n camera_rotate = " << getCamera_rotate()
-  << "\n camera_speed = " << getCamera_speed()
-  << "\n camera_mouseBorder = " << getCamera_mouseBorder()
-  << "\n camera_viewport = " << getCamera_viewport()
+  // << "\n camera_pos = " << getCamera_position()
+  // << "\n camera_zoom = " << getCamera_zoom()
+  // << "\n camera_rotate = " << getCamera_rotate()
+  // << "\n camera_speed = " << getCamera_speed()
+  // << "\n camera_mouseBorder = " << getCamera_mouseBorder()
+  // << "\n camera_viewport = " << getCamera_viewport()
   << std::endl;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.
