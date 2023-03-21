@@ -11,8 +11,10 @@ namespace dota2d
   {
   public:
     BaseWindow();
+
     BaseWindow(int,int,
                std::string,sf::Style);
+
     BaseWindow(int,int,std::string,
                sf::Style,sf::Vector2i);
 
@@ -41,8 +43,6 @@ namespace dota2d
     sf::Style m_window_style;
     sf::Vector2i m_window_position;
     sf::RenderWindow m_window;
-
-
   };
 }
 
