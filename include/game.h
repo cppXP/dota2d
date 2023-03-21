@@ -24,7 +24,7 @@ namespace dota2d
               setMap_max_pos(_maxmap);
            }
 
-      Game(sf::Vector2i,sf::Vector2i,
+      Game(sf::Vector2i _minmap,sf::Vector2i _maxmap,
           int w_height ,int w_width ,std::string w_title ,sf::Style w_style, sf::Vector2i w_pos, //window
           sf::Vector2i c_pos ,float c_zoom,float c_rotate,int c_speed,int c_mouseBorder, sf::FloatRect c_viewport, // Camera
           std::string g_texture, sf::Vector2f g_spritePos //baseSprite
