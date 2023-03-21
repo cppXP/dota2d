@@ -1,4 +1,4 @@
-#include "baseSprite.h"
+#include "../include/baseSprite.h"
 
 dota2d::BaseSprite::BaseSprite()
 {

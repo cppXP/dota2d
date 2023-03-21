@@ -1,4 +1,4 @@
-#include "baseHealth.h"
+#include "../include/baseHealth.h"
 
 dota2d::BaseHealth::BaseHealth()
 {

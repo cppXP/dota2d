@@ -1,4 +1,4 @@
-#include "baseBuilding.h"
+#include "../include/baseBuilding.h"
 
 void dota2d::BaseBuilding::setTeamSide(TeamSide _team)
 {

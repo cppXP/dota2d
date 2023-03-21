@@ -1,4 +1,4 @@
-#include "baseAttack.h"
+#include "../include/baseAttack.h"
 
 dota2d::BaseAttack::BaseAttack()
 {

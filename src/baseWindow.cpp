@@ -1,4 +1,4 @@
-#include "baseWindow.h"
+#include "../include/baseWindow.h"
 
 
 dota2d::BaseWindow::BaseWindow()
