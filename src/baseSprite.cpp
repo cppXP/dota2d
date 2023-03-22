@@ -2,8 +2,9 @@
 
 dota2d::BaseSprite::BaseSprite()
 {
-  setTexture(ASSEST_DEFAULT_TEXTURE);
-  setPosition(sf::Vector2f(0.0,0.0));
+  // setTexture(ASSEST_DEFAULT_TEXTURE);
+  // setPosition(sf::Vector2f(0.0,0.0));
+  std::cout << "baseSprite object created without texture and position.\n";
 }
 dota2d::BaseSprite::BaseSprite
     (std::string _texture,sf::Vector2f _pos)
@@ -37,6 +38,7 @@ void dota2d::BaseSprite::setPosition(sf::Vector2f _pos)
 {
   m_position = _pos;
   m_sprite.setPosition(m_position);
+  m_sprite.setOrigin(m_texture.getSize().x/2, m_texture.getSize().y/2);
 }
 
 
