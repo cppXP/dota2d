@@ -45,14 +45,13 @@ void dota2d::Game::draw()
 
 
   //render things.
-  m_window.draw(m_background_sprite);
+  m_window.draw(m_background_sprite.getSprite()); //background-sprite
 }
 
 
 void dota2d::Game::init()
 {
   std::cout << "game::init()\n";
-  // m_background_texture->loadFromFile("./assets/game/game-background.jpg");
 
   // Window init
   m_window.create
@@ -63,12 +62,6 @@ void dota2d::Game::init()
   // m_window.setPosition(getWindow_position());
   m_window.setFramerateLimit(60);
 
-
-
-  // MAP
-  m_background_texture.loadFromFile(m_background_texture_path);
-  m_background_sprite.setTexture(m_background_texture);
-  m_background_sprite.setPosition(m_background_position);
 }
 
 
