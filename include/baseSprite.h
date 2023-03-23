@@ -3,11 +3,12 @@
 #include <iostream>
 #include <string>
 #include <SFML/Graphics.hpp>
+#include "baseLog.h"
 #include "assets-config.h"
 
 namespace dota2d
 {
-  class BaseSprite
+  class BaseSprite : public BaseLog
   {
     public:
       BaseSprite();

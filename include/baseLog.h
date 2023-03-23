@@ -2,7 +2,7 @@
 #define DOTA2D_BASE_LOG_HEADER
 #include <iostream>
 #include <string>
-
+#include "assets-config.h"
 
 #include <plog/Log.h>
 #include <plog/Initializers/RollingFileInitializer.h>
@@ -15,6 +15,7 @@ namespace dota2d
     std::string m_post_message;
 
   public:
+    BaseLog();
     BaseLog(std::string, std::string);
     void fatal(std::string);
     void error(std::string);

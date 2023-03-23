@@ -3,8 +3,8 @@
 
 dota2d::BaseLog::BaseLog()
 {
-   plog::init(plog::info, "dota2d.log");
-   info("baseLog starts. path = ./dota2d.log");
+   plog::init(plog::info, LOG_FILE_NAME);
+   debug("baseLog called. log-path = " LOG_FILE_NAME);
 }
 
 void dota2d::BaseLog::set_pre_message(std::string _text)

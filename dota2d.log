@@ -1,23 +1,11 @@
 
-2023-03-22 15:40:05.646 DEBUG [70196] [dota2d::BaseLog::debug@36] baseLog has been started path = ./dota2d.log
-2023-03-22 15:40:05.646 INFO  [70196] [dota2d::BaseLog::info@31] baseLog has been started path = ./dota2d.log
-2023-03-22 15:40:05.646 WARN  [70196] [dota2d::BaseLog::warning@26] baseLog has been started path = ./dota2d.log
-2023-03-22 15:40:05.646 ERROR [70196] [dota2d::BaseLog::error@21] baseLog has been started path = ./dota2d.log
-2023-03-22 15:40:05.646 FATAL [70196] [dota2d::BaseLog::fatal@16] baseLog has been started path = ./dota2d.log
-2023-03-22 15:40:05.646 INFO  [70196] [dota2d::BaseLog::info@31] game constractor called.
+2023-03-23 20:46:24.868 INFO  [116868] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
+2023-03-23 20:46:24.868 INFO  [116868] [dota2d::BaseLog::info@37] baseSprite object created without texture and position.
+2023-03-23 20:46:24.868 INFO  [116868] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
+2023-03-23 20:46:24.868 INFO  [116868] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
+2023-03-23 20:46:24.868 INFO  [116868] [dota2d::BaseLog::info@37] game constractor called.
 
-2023-03-22 15:41:25.471 INFO  [70504] [dota2d::BaseLog::info@27] baseLog has been started path = ./dota2d.log
-2023-03-22 15:41:25.471 INFO  [70504] [dota2d::BaseLog::info@27] game constractor called.
+2023-03-23 20:46:24.868 INFO  [116868] [dota2d::BaseLog::info@37] game constractor called.
 
-2023-03-22 15:48:20.741 INFO  [72007] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
-2023-03-22 15:48:20.742 INFO  [72007] [dota2d::BaseLog::info@37] game constractor called.
-
-2023-03-22 15:49:43.381 INFO  [72281] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
-2023-03-22 15:49:43.382 INFO  [72281] [dota2d::BaseLog::info@37] game constractor called.
-
-2023-03-22 15:50:28.953 INFO  [72413] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
-2023-03-22 15:50:28.953 INFO  [72413] [dota2d::BaseLog::info@37] game constractor called.
-
-2023-03-22 15:51:14.750 INFO  [72664] [dota2d::BaseLog::info@37] baseLog starts. path = ./dota2d.log
-2023-03-22 15:51:14.751 INFO  [72664] [dota2d::BaseLog::info@37] game::ok->game constractor called.
-
+2023-03-23 20:46:25.026 INFO  [116868] [dota2d::BaseLog::info@37] texture loaded successfully ./assets/game/game-background.jpg
+2023-03-23 20:46:25.026 INFO  [116868] [dota2d::BaseLog::info@37] texture loaded successfully ./assets/game/game-background.jpg

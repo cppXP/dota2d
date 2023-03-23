@@ -41,8 +41,6 @@ void dota2d::Game::moveCamera()
 
 void dota2d::Game::draw()
 {
-  std::cout << "game.draw().. \n";
-
 
   //render things.
   m_window.draw(m_background_sprite.getSprite()); //background-sprite
@@ -51,7 +49,7 @@ void dota2d::Game::draw()
 
 void dota2d::Game::init()
 {
-  std::cout << "game::init()\n";
+  debug("game::init() called.");
 
   // Window init
   m_window.create
@@ -67,7 +65,7 @@ void dota2d::Game::init()
 
 void dota2d::Game::run()
 {
-  std::cout << "game::run()\n";
+  debug("game::run() called.");
   init();
   while(m_window.isOpen())
   {
