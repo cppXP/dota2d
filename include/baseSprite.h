@@ -8,8 +8,11 @@
 
 namespace dota2d
 {
-  class BaseSprite : public BaseLog
+  class BaseSprite
   {
+    private:
+      BaseLog m_log;
+
     public:
       BaseSprite();
       BaseSprite(std::string, sf::Vector2f);

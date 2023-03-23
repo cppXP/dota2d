@@ -3,8 +3,16 @@
 
 dota2d::BaseLog::BaseLog()
 {
-   plog::init(plog::info, LOG_FILE_NAME);
-   debug("baseLog called. log-path = " LOG_FILE_NAME);
+   plog::init(plog::debug, LOG_FILE_NAME);
+   debug("baseLog called. log-location = " LOG_FILE_NAME);
+}
+
+dota2d::BaseLog::BaseLog(std::string _pre, std::string _post)
+{
+  set_pre_message(_pre);
+  set_post_message(_post);
+  plog::init(plog::debug, LOG_FILE_NAME);
+  debug("baseLog called. pre and post seted. log-location = " LOG_FILE_NAME);
 }
 
 void dota2d::BaseLog::set_pre_message(std::string _text)

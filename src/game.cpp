@@ -49,7 +49,7 @@ void dota2d::Game::draw()
 
 void dota2d::Game::init()
 {
-  debug("game::init() called.");
+  m_log.debug("game::init() called.");
 
   // Window init
   m_window.create
@@ -59,18 +59,19 @@ void dota2d::Game::init()
   );
   // m_window.setPosition(getWindow_position());
   m_window.setFramerateLimit(60);
-
+  m_window.setKeyRepeatEnabled(false);
 }
 
 
 void dota2d::Game::run()
 {
-  debug("game::run() called.");
+  m_log.debug("game::run() called.");
   init();
   while(m_window.isOpen())
   {
 
     //event
+    m_game_events.inputs(&m_window);
 
 
 

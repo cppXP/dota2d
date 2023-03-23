@@ -2,4 +2,4 @@
 #define ASSEST_GAME_BACKGROUND_TEXTURE "./assets/game/game-background.jpg"
 
 
-#define LOG_FILE_NAME "dota2d.log"
+#define LOG_FILE_NAME "dota2d-log"

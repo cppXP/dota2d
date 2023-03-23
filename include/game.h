@@ -7,15 +7,20 @@
 #include "baseWindow.h"
 #include "baseSprite.h"
 #include "baseLog.h"
+#include "baseEvent.h"
 
 namespace dota2d
 {
-  class Game : public BaseWindow, public BaseCamera, public BaseLog
+  class Game : public BaseWindow, public BaseCamera
   {
+  private:
+    BaseLog m_log;
+
   protected:
     sf::Vector2i m_map_minimum_position;
     sf::Vector2i m_map_maximum_position;
     BaseSprite m_background_sprite;
+    BaseEvent m_game_events;
 
     public:
       Game(sf::Vector2i _minmap,sf::Vector2i _maxmap,
@@ -25,7 +30,8 @@ namespace dota2d
          ) : BaseWindow(w_height,w_width,w_title)
            , BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport)
            {
-              debug("game constractor called.\n");
+              m_log.set_pre_message(" gameLog : ");
+              m_log.debug("game constractor called.\n");
               setMap_min_pos(_minmap);
               setMap_max_pos(_maxmap);
               m_background_sprite.setTexture(bg_texture);

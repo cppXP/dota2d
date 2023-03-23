@@ -4,12 +4,13 @@ dota2d::BaseSprite::BaseSprite()
 {
   // setTexture(ASSEST_DEFAULT_TEXTURE);
   // setPosition(sf::Vector2f(0.0,0.0));
-  debug("baseSprite object created without texture and position.");
+  m_log.set_pre_message(" spritelog : ");
+  m_log.debug("baseSprite object created without texture and position.");
 }
 dota2d::BaseSprite::BaseSprite
     (std::string _texture,sf::Vector2f _pos)
 {
-    debug("baseSprite object created with texture and position.");
+    m_log.debug("baseSprite object created with texture and position.");
     setTexture(_texture);
     setPosition(_pos);
 }
@@ -19,18 +20,18 @@ void dota2d::BaseSprite::setTexture(std::string _texture)
   m_texture_path = _texture;
   if(!m_texture.loadFromFile(m_texture_path))
   {
-    warning("can not load texture " + getTexture_path());
+    m_log.warning("can not load texture " + getTexture_path());
     if(!m_texture.loadFromFile(ASSEST_DEFAULT_TEXTURE))
-      error("can not load default texture " ASSEST_DEFAULT_TEXTURE);
+      m_log.error("can not load default texture " ASSEST_DEFAULT_TEXTURE);
     else
     {
-      warning("default texture loaded " ASSEST_DEFAULT_TEXTURE);
+      m_log.warning("default texture loaded " ASSEST_DEFAULT_TEXTURE);
       m_sprite.setTexture(m_texture);
     }
   }
   else
   {
-    info("texture loaded successfully " + getTexture_path());
+    m_log.info("texture loaded successfully " + getTexture_path());
     m_sprite.setTexture(m_texture);
   }
 }
