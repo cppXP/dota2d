@@ -17,8 +17,8 @@ void dota2d::BaseEvent::live_inputs()
      std::cout << " keyboard pressed left live" <<std::endl;
     else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
      std::cout << " keyboard pressed up live" <<std::endl;
-      // else if(sf::Keyboard::isKeyReleased(sf::Keyboard::Up))
-      //std::cout << " keyboard released up live " <<std::endl;
+      else if(sf::Keyboard::isKeyReleased(sf::Keyboard::Up))
+      std::cout << " keyboard released up live " <<std::endl;
     else if(sf::Mouse::isButtonPressed(sf::Mouse::Right))
      std::cout << " mouse button preesed right" <<std::endl;
 }
@@ -115,7 +115,13 @@ void dota2d::BaseEvent::ew_mouse_entered(sf::Event _event)
   std::cout << "windows mouse entered.\n";
 }
 
-
+// void dota2d::BaseEvent::check_keyboard_hotkeys(const sf::Event& _event)
+// {
+  // switch (_event.key.code)
+  // {
+    // case h_1_level:
+  // }
+// }
 
 // Mouse
 void dota2d::BaseEvent::em_pressed(sf::Event _event)

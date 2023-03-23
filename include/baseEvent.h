@@ -14,8 +14,10 @@ namespace dota2d
   public:
     BaseEvent();
     void inputs(sf::RenderWindow*);
+
   protected:
     void live_inputs();
+    // void check_is_hotkey_pressed(const sf::Event&);
 
     // Window
     void ew_gained_focus(sf::Event);

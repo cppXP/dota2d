@@ -1,0 +1,63 @@
+struct Hotkeys //h_ means hotkey
+(
+  // Level
+  int h_1_level = sf::Keyboard::Q;
+  int h_2_level = sf::Keyboard::W;
+  int h_3_level = sf::Keyboard::E;
+  int h_4_level = sf::Keyboard::D;
+  int h_5_level = sf::Keyboard::F;
+  int h_6_level = sf::Keyboard::R;
+
+  // Item
+  int h_1_item = sf::Keyboard::Z;
+  int h_2_item = sf::Keyboard::X;
+  int h_3_item = sf::Keyboard::C;
+  int h_4_item = sf::Keyboard::V;
+  int h_5_item = sf::Keyboard::B;
+  int h_6_item = sf::Keyboard::N;
+  int h_7_item = sf::Keyboard::Space; //jungle item
+  int h_8_item = sf::Keyboard::Tilde; //teleport
+
+
+  // Action
+  int h_stop = sf:Keyboard::S;
+  int h_deny = sf::Keyboard::A;
+  int h_taunt = sf::Keyboard::K;
+  int h_stack_movement = sf::Keyboard::LShift;
+  int h_glyph_fortification = sf::Keyboard::J;
+  int h_scoreboard = sf::Keyboard::Tab;
+  int h_pause_unpause = sf::Keyboard::F9;
+  int h_screenshot = sf::Keyboard::F6;
+
+  // Selection
+  int h_select_hero = sf::Keyboard::F1;
+  int h_select_courier = sf::Keyboard::F2;
+  int h_courier_transform_item = sf::Keyboard::F2;
+  int h_open_shop = sf::Keyboard::F4;
+  int h_select = sf::Mouse::Left; //also known as use / attack / chose
+  int h_move = sf::Mouse::Right;
+
+  // Comminuation Chat
+  int h_open_chat = sf::Keyboard::T;
+  int h_send_chat = sf::Keyboard::Enter;
+  int h_remove_chat = sf::Keyboard::Backspace;
+
+  // Comminuation Voice
+  int h_voice_to_party = sf::Keyboard::H;
+  int h_voice_to_team = sf::Keyboard::G;
+  int h_voice_mute = sf::Keyboard::M;
+
+  // Comminuation No_Chat
+  int h_wheel_chat = sf::Keyboard::Y;
+  int h_wheel_voice = sf::Keyboard::U;
+  int h_alert = sf::Keyboard::LAlt;
+  int h_paint = sf::Keyboard::LControl;
+
+  // Camera Movement
+  int h_camera_right = sf::Keyboard::Right;
+  int h_camera_left = sf::Keyboard::Left;
+  int h_camera_up = sf::Keyboard::Up;
+  int h_camera_down = sf::Keyboard::Down;
+  // int h_camera_mouseBorder_value = 5; //later remove this from BaseCamera and add here.
+
+);
