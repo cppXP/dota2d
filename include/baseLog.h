@@ -9,14 +9,12 @@
 
 namespace dota2d
 {
-
   class BaseLog
   {
     std::string m_pre_message;
     std::string m_post_message;
 
   public:
-    BaseLog();
     BaseLog(std::string, std::string);
     void fatal(std::string);
     void error(std::string);
