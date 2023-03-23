@@ -9,6 +9,8 @@ dota2d::BaseCamera::BaseCamera()
   setCamera_speed(5);
   setCamera_mouseBorder(5);
   setCamera_viewport(sf::FloatRect(0,0, 1.0f, 1.0f));
+  m_log.set_pre_message(" cameraLog : ");
+  m_log.debug("camera constractor called.\n");
 }
 
 
@@ -24,7 +26,8 @@ dota2d::BaseCamera::BaseCamera(
   setCamera_speed(c_speed);
   setCamera_mouseBorder(c_mouseBorder);
   setCamera_viewport(c_viewport);
-
+  m_log.set_pre_message(" cameraLog : ");
+  m_log.debug("camera constractor called.\n");
 }
 
 

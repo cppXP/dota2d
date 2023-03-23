@@ -2,12 +2,17 @@
 #define DOTA2D_BASE_EVENT_HEADER
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "baseLog.h"
 
 namespace dota2d
 {
   class BaseEvent
   {
+  private:
+    BaseLog m_log;
+
   public:
+    BaseEvent();
     void inputs(sf::RenderWindow*);
   protected:
     void live_inputs();

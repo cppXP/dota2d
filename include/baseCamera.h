@@ -2,11 +2,14 @@
 #define DOTA2D_BASE_CAMERA_HEADER
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "baseLog.h"
 
 namespace dota2d
 {
   class BaseCamera
   {
+  private:
+    BaseLog m_log;
   public:
     BaseCamera();
     BaseCamera(sf::Vector2i,

@@ -3,12 +3,16 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include <string>
+#include "baseLog.h"
 
 
 namespace dota2d
 {
   class BaseWindow
   {
+  private:
+    BaseLog m_log;
+    
   public:
     BaseWindow();
 

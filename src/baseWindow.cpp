@@ -7,6 +7,8 @@ dota2d::BaseWindow::BaseWindow()
   setWindow_width(200);
   setWindow_title("Default Title");
   setWindow_position(sf::Vector2i(0,0));
+  m_log.set_pre_message(" windowLog : ");
+  m_log.debug("baseWindow object created without texture and position.");
 }
 
 
@@ -17,6 +19,8 @@ dota2d::BaseWindow::BaseWindow(
   setWindow_width(_wwidth);
   setWindow_height(_wheight);
   setWindow_title(_wtitle);
+  m_log.set_pre_message(" windowLog : ");
+  m_log.debug("baseWindow object created without texture and position.");
 }
 
 dota2d::BaseWindow::BaseWindow(
@@ -28,6 +32,8 @@ dota2d::BaseWindow::BaseWindow(
   setWindow_height(_wheight);
   setWindow_title(_wtitle);
   setWindow_position(_wpos);
+  m_log.set_pre_message(" windowLog : ");
+  m_log.debug("baseWindow object created without texture and position.");
 }
 
 

@@ -1,6 +1,12 @@
 #include "../include/baseEvent.h"
 
 
+dota2d::BaseEvent::BaseEvent()
+{
+  m_log.set_pre_message(" eventLog : ");
+  m_log.debug("baseEvent object created without texture and position.");
+}
+
 void dota2d::BaseEvent::live_inputs()
 {
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
