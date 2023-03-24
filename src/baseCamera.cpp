@@ -31,6 +31,32 @@ dota2d::BaseCamera::BaseCamera(
 }
 
 
+sf::View dota2d::BaseCamera::getView()
+{
+  return m_camera;
+}
+
+void dota2d::BaseCamera::doReset(sf::FloatRect _value)
+{
+  m_camera.reset(_value);
+}
+
+void dota2d::BaseCamera::doMove(float _x, float _y)
+{
+    m_camera.move(_x,_y);
+}
+
+void dota2d::BaseCamera::doViewport(sf::FloatRect _viewport)
+{
+  m_camera.setViewport(_viewport);
+}
+
+void dota2d::BaseCamera::doCenter(sf::Vector2f _pos)
+{
+  m_camera.setCenter(_pos);
+}
+
+
 void dota2d::BaseCamera::setCamera_speed(int _speed)
 {
   m_camera_speed = _speed;

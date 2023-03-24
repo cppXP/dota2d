@@ -31,10 +31,15 @@ namespace dota2d
    float getCamera_zoom();
    int getCamera_speed();
    float getCamera_rotate();
+   sf::View getView();
 
 
    //actions
    void printCamera_stats();
+   void doReset(sf::FloatRect);
+   void doViewport(sf::FloatRect);
+   void doCenter(sf::Vector2f);
+   void doMove(float,float);
 
 
   protected:

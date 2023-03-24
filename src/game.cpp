@@ -33,9 +33,9 @@ void dota2d::Game::printGame_stats()
 void dota2d::Game::moveCamera()
 {
   // Camera init
-  m_camera.reset(sf::FloatRect(0,0, m_window_width/2, m_window_height/2));
-  m_camera.setViewport(m_camera_viewport);
-  m_window.setView(m_camera);
+  ptr_camera->doReset(sf::FloatRect(ptr_camera->getCamera_position().x, ptr_camera->getCamera_position().y, m_window_width/2, m_window_height/2));
+  ptr_camera->doViewport(ptr_camera->getCamera_viewport());
+  m_window.setView(ptr_camera->getView());
 }
 
 
@@ -60,6 +60,10 @@ void dota2d::Game::init()
   // m_window.setPosition(getWindow_position());
   m_window.setFramerateLimit(60);
   m_window.setKeyRepeatEnabled(false);
+
+  // Camera init
+  ptr_camera->doReset(sf::FloatRect(0,0, m_window_width/2, m_window_height/2));
+  ptr_camera->doViewport(ptr_camera->getCamera_viewport());
 }
 
 

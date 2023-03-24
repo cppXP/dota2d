@@ -11,7 +11,7 @@
 
 namespace dota2d
 {
-  class Game : public BaseWindow, public BaseCamera
+  class Game : public BaseWindow
   {
   private:
     BaseLog m_log;
@@ -21,6 +21,7 @@ namespace dota2d
     sf::Vector2i m_map_maximum_position;
     BaseSprite m_background_sprite;
     BaseEvent m_game_events;
+    BaseCamera* ptr_camera = nullptr;
 
     public:
       Game(sf::Vector2i _minmap,sf::Vector2i _maxmap,
@@ -28,15 +29,22 @@ namespace dota2d
            sf::Vector2i c_pos ,float c_zoom,float c_rotate,int c_speed,int c_mouseBorder, sf::FloatRect c_viewport, // Camera
            std::string bg_texture, sf::Vector2f bg_position //baseSprite
          ) : BaseWindow(w_height,w_width,w_title)
-           , BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport)
            {
               m_log.set_pre_message(" gameLog : ");
-              m_log.debug("game constractor called.\n");
+              m_log.debug("game constractor called.");
               setMap_min_pos(_minmap);
               setMap_max_pos(_maxmap);
               m_background_sprite.setTexture(bg_texture);
               m_background_sprite.setPosition(bg_position);
+
+              ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
            };
+
+      ~Game()
+      {
+        m_log.debug(" destoractor game called.");
+        delete ptr_camera;
+      }
 
 
       void setMap_min_pos(sf::Vector2i);
