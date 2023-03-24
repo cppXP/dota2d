@@ -38,6 +38,7 @@ namespace dota2d
               m_background_sprite.setPosition(bg_position);
 
               ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
+              printGame_stats();
            };
 
       ~Game()
@@ -57,7 +58,7 @@ namespace dota2d
       void draw();
       void init();
       void run();
-      void moveCamera();
+      void updateCamera();
   };
 }
 #endif

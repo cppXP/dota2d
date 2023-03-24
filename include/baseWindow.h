@@ -12,7 +12,7 @@ namespace dota2d
   {
   private:
     BaseLog m_log;
-    
+
   public:
     BaseWindow();
 
@@ -32,6 +32,7 @@ namespace dota2d
     int getWindow_height();
     // sf::RenderWindow getWindow();
     sf::Vector2i getWindow_position();
+    BaseWindow getBase_window();
 
     //actions
     void printWindow_stats();

@@ -6,6 +6,13 @@
 
 namespace dota2d
 {
+  enum class camera_move_direction
+  {
+    Left,
+    Right,
+    Up,
+    Down
+  };
   class BaseCamera
   {
   private:
@@ -40,6 +47,7 @@ namespace dota2d
    void doViewport(sf::FloatRect);
    void doCenter(sf::Vector2f);
    void doMove(float,float);
+   void doMove(sf::Vector2i,sf::Vector2i,camera_move_direction);
 
 
   protected:

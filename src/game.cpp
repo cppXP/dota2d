@@ -30,11 +30,19 @@ void dota2d::Game::printGame_stats()
 }
 
 
-void dota2d::Game::moveCamera()
+void dota2d::Game::updateCamera()
 {
-  // Camera init
   ptr_camera->doReset(sf::FloatRect(ptr_camera->getCamera_position().x, ptr_camera->getCamera_position().y, m_window_width/2, m_window_height/2));
   ptr_camera->doViewport(ptr_camera->getCamera_viewport());
+  // ptr_camera->doZoom(...;
+  // ptr_camera->doRotate(..);
+
+  //is heron on center?
+      // ptr_camera->doCenter(...);
+
+
+
+  //Camera position and movement is doing by baseEvent.cpp when mouse moved they move position.. here we show and init
   m_window.setView(ptr_camera->getView());
 }
 
@@ -62,8 +70,8 @@ void dota2d::Game::init()
   m_window.setKeyRepeatEnabled(false);
 
   // Camera init
-  ptr_camera->doReset(sf::FloatRect(0,0, m_window_width/2, m_window_height/2));
-  ptr_camera->doViewport(ptr_camera->getCamera_viewport());
+  // ptr_camera->doReset(sf::FloatRect(0,0, m_window_width/2, m_window_height/2));
+  // ptr_camera->doViewport(ptr_camera->getCamera_viewport());
 }
 
 
@@ -75,11 +83,12 @@ void dota2d::Game::run()
   {
 
     //event
-    m_game_events.inputs(&m_window);
+    m_game_events.inputs(&m_window, ptr_camera, getMap_min_pos(), getMap_max_pos());
 
 
 
     //render things.
+    updateCamera();
     m_window.clear(sf::Color::Black);
     draw();
     m_window.display();

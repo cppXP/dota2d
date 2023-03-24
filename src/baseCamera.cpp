@@ -44,7 +44,57 @@ void dota2d::BaseCamera::doReset(sf::FloatRect _value)
 void dota2d::BaseCamera::doMove(float _x, float _y)
 {
     m_camera.move(_x,_y);
+    // _x += getCamera_position().x;
+    // _y += getCamera_position().y;
+    setCamera_position(sf::Vector2i(_x,_y));
 }
+
+void dota2d::BaseCamera::doMove(sf::Vector2i _min_pos ,sf::Vector2i _max_pos, camera_move_direction _direction)
+{
+  switch(_direction)
+  {
+    case camera_move_direction::Left:
+    {
+      if(!(m_camera_position.x <= _min_pos.x))
+        m_camera_position.x -= m_camera_speed;
+      else
+        std::cout << "left map ended.\n";
+    }break;
+
+    case camera_move_direction::Right:
+    {
+      if(!(m_camera_position.x >= _max_pos.x))
+        m_camera_position.x += m_camera_speed;
+      else
+        std::cout << "right map ended.\n";
+    }break;
+
+    case camera_move_direction::Up:
+    {
+      if(!(m_camera_position.y <= _min_pos.y))
+        m_camera_position.y -= m_camera_speed;
+      else
+        std::cout << "up map ended.\n";
+    }break;
+
+    case camera_move_direction::Down:
+    {
+      if(!(m_camera_position.y >= _max_pos.y))
+        m_camera_position.y += m_camera_speed;
+      else
+        std::cout << "down map ended.\n";
+    }break;
+
+    default:
+    {
+      return;
+      std::cout << " can not understand doMove(camera_move_direction)\n";
+    }break;
+  }
+  doMove((float)m_camera_position.x,(float)m_camera_position.y);
+  std::cout << "camera doMove with direction called. \n";
+}
+
 
 void dota2d::BaseCamera::doViewport(sf::FloatRect _viewport)
 {

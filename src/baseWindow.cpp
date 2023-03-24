@@ -36,8 +36,6 @@ dota2d::BaseWindow::BaseWindow(
   m_log.debug("baseWindow object created without texture and position.");
 }
 
-
-
 void dota2d::BaseWindow::setWindow_width(int _w)
 {
   m_window_width = _w;

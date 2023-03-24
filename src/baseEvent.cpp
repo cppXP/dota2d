@@ -7,8 +7,30 @@ dota2d::BaseEvent::BaseEvent()
   m_log.debug("baseEvent object created without texture and position.");
 }
 
-void dota2d::BaseEvent::live_inputs()
+void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::RenderWindow* _window, sf::Vector2i _min_pos ,sf::Vector2i _max_pos)
 {
+  //mouse
+  // Move Camera By Mouse Movement LIVE
+  sf::Vector2i position = sf::Mouse::getPosition((*_window));
+  if(position.x <= _camera.getCamera_mouseBorder()) //go left
+    _camera.doMove(_min_pos,_max_pos,camera_move_direction::Left);
+
+  if(position.y <= _camera.getCamera_mouseBorder()) //go top
+    _camera.doMove(_min_pos,_max_pos,camera_move_direction::Up);
+
+  if(position.y > _window->getSize().y - _camera.getCamera_mouseBorder()) //go bottom
+    _camera.doMove(_min_pos,_max_pos,camera_move_direction::Down);
+
+  if(position.x > _window->getSize().x - _camera.getCamera_mouseBorder()) //go right
+  _camera.doMove(_min_pos,_max_pos,camera_move_direction::Right);
+
+
+
+
+
+
+
+  //keyboard
   if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
    std::cout << " keyboard pressed down live" <<std::endl;
   else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
@@ -23,10 +45,10 @@ void dota2d::BaseEvent::live_inputs()
      std::cout << " mouse button preesed right" <<std::endl;
 }
 
-void dota2d::BaseEvent::inputs(sf::RenderWindow* _window)
+void dota2d::BaseEvent::inputs(sf::RenderWindow* _window, BaseCamera* _camera, sf::Vector2i _min_pos , sf::Vector2i _max_pos)
 {
-  live_inputs();
   sf::Event event;
+  live_inputs(event, (*_camera), &(*_window), _min_pos, _max_pos);
   while(_window->pollEvent(event))
   {
     switch(event.type)
@@ -149,6 +171,7 @@ void dota2d::BaseEvent::em_released(sf::Event _event)
     std::cout << "mouse right released\n";
   }
 }
+
 
 void dota2d::BaseEvent::em_moved(sf::Event _event)
 {

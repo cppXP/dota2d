@@ -3,6 +3,8 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "baseLog.h"
+#include "baseCamera.h"
+#include "baseWindow.h"
 
 namespace dota2d
 {
@@ -13,10 +15,10 @@ namespace dota2d
 
   public:
     BaseEvent();
-    void inputs(sf::RenderWindow*);
+    void inputs(sf::RenderWindow*, BaseCamera* , sf::Vector2i , sf::Vector2i);
 
   protected:
-    void live_inputs();
+    void live_inputs(sf::Event,BaseCamera&,sf::RenderWindow*,sf::Vector2i ,sf::Vector2i);
     // void check_is_hotkey_pressed(const sf::Event&);
 
     // Window
