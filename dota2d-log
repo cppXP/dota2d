@@ -2592,3 +2592,309 @@
 2023-03-24 17:04:38.954 DEBUG [84561] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
 2023-03-24 17:04:38.954 DEBUG [84561] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
 2023-03-24 17:04:38.954 DEBUG [84561] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 12:04:29.792 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  windowLog : baseWindow object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 12:04:30.085 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 12:04:30.132 INFO  [104987] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/tem-map.png
+2023-03-25 12:04:30.132 INFO  [104987] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/tem-map.png
+2023-03-25 12:04:30.132 INFO  [104987] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/tem-map.png
+2023-03-25 12:04:30.132 INFO  [104987] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/tem-map.png
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 12:04:30.132 DEBUG [104987] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 13:10:55.871 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.439 DEBUG [111296] [dota2d::BaseLog::debug@50]  windowLog : baseWindow object created without texture and position.
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.442 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 13:10:56.443 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 13:10:56.885 INFO  [111296] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 13:10:56.885 INFO  [111296] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 13:10:56.885 INFO  [111296] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 13:10:56.885 INFO  [111296] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 13:10:56.886 DEBUG [111296] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:32:21.189 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.960 DEBUG [122836] [dota2d::BaseLog::debug@50]  windowLog : baseWindow object created without texture and position.
+2023-03-25 21:32:21.960 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.960 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.960 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.960 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.960 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:32:21.961 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:32:22.417 INFO  [122836] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:32:22.417 INFO  [122836] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:32:22.417 INFO  [122836] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:32:22.417 INFO  [122836] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:32:22.417 DEBUG [122836] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:25.540 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50]  windowLog : baseWindow object created without texture and position.
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.886 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:25.887 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:26.037 INFO  [123067] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:26.037 INFO  [123067] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:26.037 INFO  [123067] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:26.037 INFO  [123067] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:26.037 DEBUG [123067] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:56.011 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.392 DEBUG [123216] [dota2d::BaseLog::debug@50]  windowLog : baseWindow object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:56.395 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 21:33:56.566 INFO  [123216] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:56.566 INFO  [123216] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:56.566 INFO  [123216] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:56.566 INFO  [123216] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 21:33:56.566 DEBUG [123216] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 22:32:48.358 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  windowLog : baseWindow object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  spritelog : baseSprite object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  eventLog : baseEvent object created without texture and position.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 22:32:48.737 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game constractor called.
+2023-03-25 22:32:48.875 INFO  [127371] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 22:32:48.875 INFO  [127371] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 22:32:48.875 INFO  [127371] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 22:32:48.875 INFO  [127371] [dota2d::BaseLog::info@45]  spritelog : texture loaded successfully ./assets/game/game-background.jpg
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50] baseLog called. log-location = dota2d-log
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  cameraLog : camera constractor called.
+
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::run() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
+2023-03-25 22:32:48.875 DEBUG [127371] [dota2d::BaseLog::debug@50]  gameLog : game::init() called.
