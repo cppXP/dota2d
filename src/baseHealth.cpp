@@ -2,60 +2,34 @@
 
 dota2d::BaseHealth::BaseHealth()
 {
-  setMana(0);
-  setMaxMana(0);
-  setManaRegen(0.0);
-
   setHitpoint(0);
   setMaxHitpoint(0);
   setHitpointRegen(0.0);
 
   setMagicRasistant(0.0);
   setPhysicRasistant(0.0);
+  m_sprite_hitpoint.set_baseSpriteBar_value_color(sf::Color::Green);
+  m_sprite_hitpoint.set_baseSpriteBar_max_color(sf::Color::Black);
+  m_sprite_hitpoint.set_baseSpriteBar_max_border_color(sf::Color::White);
+  m_sprite_hitpoint.set_baseSpriteBar_position(sf::Vector2f(0.0, 0.0));
 }
 
 dota2d::BaseHealth::BaseHealth
           (int _hitpoint,int _max_hitpoint,float _hitpoint_regen,
-           int _mana,int _max_mana,float _mana_regen,
            float _magic_rasistant,float _physic_rasistant)
 {
-  setMana(_mana);
-  setMaxMana(_max_mana);
-  setManaRegen(_mana_regen);
-
   setHitpoint(_hitpoint);
   setMaxHitpoint(_max_hitpoint);
   setHitpointRegen(_hitpoint_regen);
 
   setMagicRasistant(_magic_rasistant);
   setPhysicRasistant(_physic_rasistant);
-}
 
-void dota2d::BaseHealth::setMana(int _value)
-{
-  m_mana = _value;
+  m_sprite_hitpoint.set_baseSpriteBar_value_color(sf::Color::Green);
+  m_sprite_hitpoint.set_baseSpriteBar_max_color(sf::Color::Black);
+  m_sprite_hitpoint.set_baseSpriteBar_max_border_color(sf::Color::White);
+  m_sprite_hitpoint.set_baseSpriteBar_position(sf::Vector2f(0.0, 0.0));
 }
-void dota2d::BaseHealth::setManaRegen(float _value)
-{
-  m_mana_regen = _value;
-}
-void dota2d::BaseHealth::setMaxMana(int _value)
-{
-  m_max_mana = _value;
-}
-int dota2d::BaseHealth::getMana() const
-{
-  return m_mana;
-}
-float dota2d::BaseHealth::getManaRegen() const
-{
-  return m_mana_regen;
-}
-int dota2d::BaseHealth::getMaxMana() const
-{
-  return m_max_mana;
-}
-
 
 
 
@@ -114,9 +88,6 @@ void dota2d::BaseHealth::printHealth_stats() const
        << "\n hitpoint = " << getHitpoint()
        << "\n max-hitpoint = " << getMaxHitpoint()
        << "\n hitpoint-regen = " << getHitpointRegen()
-       << "\n mana = " << getMana()
-       << "\n max-mana = " << getMaxMana()
-       << "\n mana-regen = " << getManaRegen()
        << "\n physical-rasistant = " << getPhysicRasistant()
        << "\n magical-rasistant = " << getMagicRasistant()
        << " .";

@@ -2,6 +2,7 @@
 #define DOTA2D_BASE_HEALTH_HEADER
 #include <SFML/Graphics.hpp>
 #include <iostream>
+#include "baseSpriteBar.h"
 
 
 namespace dota2d
@@ -11,28 +12,16 @@ namespace dota2d
     public:
         BaseHealth();
         BaseHealth(int,int,float,
-                   int,int,float,
                    float,float);
     protected:
       int m_hitpoint;
       int m_max_hitpoint;
       float m_hitpoint_regen;
 
-      int m_mana;
-      int m_max_mana;
-      float m_mana_regen;
-
       float m_physical_rasistant;
       float m_magical_rasistant;
 
-
-      //mana
-      void setMana(int);
-      void setManaRegen(float);
-      void setMaxMana(int);
-      int getMana() const;
-      float getManaRegen() const;
-      int getMaxMana() const;
+      BaseSpriteBar m_sprite_hitpoint;
 
       //rasistant
       void setMagicRasistant(float);
