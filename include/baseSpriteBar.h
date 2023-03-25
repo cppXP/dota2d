@@ -9,11 +9,15 @@ namespace dota2d
   class BaseSpriteBar
   {
   public:
+    BaseSpriteBar();
     BaseSpriteBar(sf::Color,sf::Color,sf::Color,sf::Vector2f);
 
     void set_baseSpriteBar_text(std::string);
     void set_baseSpriteBar_percent(int);
     void set_baseSpriteBar_position(sf::Vector2f);
+    void set_baseSpriteBar_value_color(sf::Color);
+    void set_baseSpriteBar_max_color(sf::Color);
+    void set_baseSpriteBar_max_border_color(sf::Color);
 
     sf::RectangleShape get_baseSpriteBar_max_sprite();
     sf::RectangleShape get_baseSpriteBar_value_sprite();
