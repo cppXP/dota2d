@@ -1,5 +1,5 @@
-#ifndef DOTA2D_BUILDING_SHRINE_HEADER
-#define DOTA2D_BUILDING_SHRINE_HEADER
+#ifndef DOTA2D_BUILDING_ANCIENT_HEADER
+#define DOTA2D_BUILDING_ANCIENT_HEADER
 #include "buildingAttackable.h"
 
 namespace dota2d
@@ -12,7 +12,7 @@ namespace dota2d
               ) : BuildingAttackable(_hp, _max_hp, _hp_regen, _physical_rasistant,
                             _magical_rasistant,_side, _texture, _pos)
                             {
-                              
+
                             }
   };
 }
