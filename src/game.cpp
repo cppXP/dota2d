@@ -53,8 +53,14 @@ void dota2d::Game::draw()
   m_window.draw(m_background_sprite.getSprite()); //background-sprite
 
   //render things.
+
+  //unattackable buildings
   m_window.draw(ptr_building_shrine->getSprite());
+
+  //attackable builidngs
   m_window.draw(ptr_building_ancient->getSprite());
+  m_window.draw(ptr_building_ancient->m_sprite_hitpoint.get_baseSpriteBar_max_sprite());
+  m_window.draw(ptr_building_ancient->m_sprite_hitpoint.get_baseSpriteBar_value_sprite());
 }
 
 
