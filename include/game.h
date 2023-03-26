@@ -9,6 +9,9 @@
 #include "baseLog.h"
 #include "baseEvent.h"
 
+#include "./buildings/building-shrine.h"
+
+
 namespace dota2d
 {
   class Game : public BaseWindow
@@ -22,6 +25,7 @@ namespace dota2d
     BaseSprite m_background_sprite;
     BaseEvent m_game_events;
     BaseCamera* ptr_camera = nullptr;
+    Shrine* ptr_building_shrine = nullptr;
 
     public:
       Game(sf::Vector2i _minmap,sf::Vector2i _maxmap,
@@ -37,6 +41,8 @@ namespace dota2d
               m_background_sprite.setTexture(bg_texture);
               m_background_sprite.setPosition(bg_position);
 
+
+              ptr_building_shrine = new Shrine(false,TeamSide::Radiant,ASSEST_BUILDING_SHRINE,sf::Vector2f(100,100));
               ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
               printGame_stats();
            };
@@ -44,6 +50,7 @@ namespace dota2d
       ~Game()
       {
         m_log.debug(" destoractor game called.");
+        delete ptr_building_shrine;
         delete ptr_camera;
       }
 

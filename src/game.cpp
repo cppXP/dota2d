@@ -52,6 +52,7 @@ void dota2d::Game::draw()
 
   //render things.
   m_window.draw(m_background_sprite.getSprite()); //background-sprite
+  m_window.draw(ptr_building_shrine->getSprite());
 }
 
 
