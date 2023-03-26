@@ -14,7 +14,7 @@ namespace dota2d
           ) : BaseBuilding(_side, _texture, _pos)
             , BaseHealth(_hp, _max_hp, _hp_regen, _physical_rasistant, _magical_rasistant)
             {
-              
+
             }
   };
 }

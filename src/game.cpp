@@ -49,10 +49,12 @@ void dota2d::Game::updateCamera()
 
 void dota2d::Game::draw()
 {
+  //map things
+  m_window.draw(m_background_sprite.getSprite()); //background-sprite
 
   //render things.
-  m_window.draw(m_background_sprite.getSprite()); //background-sprite
   m_window.draw(ptr_building_shrine->getSprite());
+  m_window.draw(ptr_building_ancient->getSprite());
 }
 
 
