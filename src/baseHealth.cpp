@@ -33,6 +33,25 @@ dota2d::BaseHealth::BaseHealth
 
 
 
+dota2d::BaseHealth::BaseHealth
+          (int _hitpoint,int _max_hitpoint,float _hitpoint_regen,
+           float _magic_rasistant,float _physic_rasistant,
+           sf::Vector2f _health_bar_position)
+{
+  setHitpoint(_hitpoint);
+  setMaxHitpoint(_max_hitpoint);
+  setHitpointRegen(_hitpoint_regen);
+
+  setMagicRasistant(_magic_rasistant);
+  setPhysicRasistant(_physic_rasistant);
+
+  m_sprite_hitpoint.set_baseSpriteBar_value_color(sf::Color::Green);
+  m_sprite_hitpoint.set_baseSpriteBar_max_color(sf::Color::Black);
+  m_sprite_hitpoint.set_baseSpriteBar_max_border_color(sf::Color::White);
+
+  m_sprite_hitpoint.set_baseSpriteBar_position(_health_bar_position);
+}
+
 
 
 

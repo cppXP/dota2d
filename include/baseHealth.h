@@ -10,9 +10,12 @@ namespace dota2d
   class BaseHealth
   {
     public:
+        BaseSpriteBar m_sprite_hitpoint;
         BaseHealth();
         BaseHealth(int,int,float,
                    float,float);
+        BaseHealth(int,int,float,float,float,sf::Vector2f);
+
     protected:
       int m_hitpoint;
       int m_max_hitpoint;
@@ -21,7 +24,6 @@ namespace dota2d
       float m_physical_rasistant;
       float m_magical_rasistant;
 
-      BaseSpriteBar m_sprite_hitpoint;
 
       //rasistant
       void setMagicRasistant(float);
