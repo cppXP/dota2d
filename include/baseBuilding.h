@@ -20,12 +20,12 @@ namespace dota2d
       {
         setTeamSide(TeamSide::None);
       }
-      BaseBuilding(TeamSide _teamValue, bool _attackable)
+      BaseBuilding(TeamSide _teamValue)
                   : BaseSprite()
       {
         setTeamSide(_teamValue);
       }
-      BaseBuilding(TeamSide _teamValue, bool _attackable,
+      BaseBuilding(TeamSide _teamValue,
                    std::string _texture, sf::Vector2f _pos)
                    : BaseSprite(_texture,_pos)
       {
