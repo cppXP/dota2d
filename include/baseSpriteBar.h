@@ -4,6 +4,9 @@
 #include <string>
 #include <SFML/Graphics.hpp>
 
+#define BASE_SPRITE_BAR_WIDTH 100
+#define BASE_SPRITE_BAR_HEIGHT 10
+
 namespace dota2d
 {
   class BaseSpriteBar

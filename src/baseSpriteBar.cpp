@@ -3,19 +3,19 @@
 
 dota2d::BaseSpriteBar::BaseSpriteBar()
 {
-  m_spriteBar_value_percent = 50;
+  m_spriteBar_value_percent = 100;
   m_spriteBar_centered_text = "";
 
   //Max
   set_baseSpriteBar_max_color(sf::Color::Black);
   set_baseSpriteBar_max_border_color(sf::Color::White);
-  m_spriteBar_sprite_max.setSize(sf::Vector2f(100.f, 25.f));
+  m_spriteBar_sprite_max.setSize(sf::Vector2f(BASE_SPRITE_BAR_WIDTH, BASE_SPRITE_BAR_HEIGHT));
   m_spriteBar_sprite_max.setPosition(sf::Vector2f(0.0, 0.0));
 
 
   //Value
   set_baseSpriteBar_value_color(sf::Color::Yellow);
-  m_spriteBar_sprite_value.setSize(sf::Vector2f(50.f, 25.f));
+  m_spriteBar_sprite_value.setSize(sf::Vector2f(BASE_SPRITE_BAR_WIDTH, BASE_SPRITE_BAR_HEIGHT));
   m_spriteBar_sprite_value.setPosition(sf::Vector2f(0.0, 0.0));
 }
 
@@ -35,14 +35,12 @@ dota2d::BaseSpriteBar::BaseSpriteBar(sf::Color _value_fillcolor ,
   //Max
   set_baseSpriteBar_max_color(_max_fillcolor);
   set_baseSpriteBar_max_border_color(_max_border_color);
-  m_spriteBar_sprite_max.setSize(sf::Vector2f(100.f, 25.f));
+  m_spriteBar_sprite_max.setSize(sf::Vector2f(BASE_SPRITE_BAR_WIDTH, BASE_SPRITE_BAR_HEIGHT));
   m_spriteBar_sprite_max.setPosition(_pos);
-
-
 
   //Value
   set_baseSpriteBar_value_color(_value_fillcolor);
-  m_spriteBar_sprite_value.setSize(sf::Vector2f(100.f, 25.f));
+  m_spriteBar_sprite_value.setSize(sf::Vector2f(BASE_SPRITE_BAR_WIDTH, BASE_SPRITE_BAR_HEIGHT));
   m_spriteBar_sprite_value.setPosition(_pos);
 }
 
