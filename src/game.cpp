@@ -54,13 +54,9 @@ void dota2d::Game::draw()
 
   //render things.
 
-  //unattackable buildings
-  m_window.draw(ptr_building_shrine->getSprite());
-
-  //attackable builidngs
-  m_window.draw(ptr_building_ancient->getSprite());
-  m_window.draw(ptr_building_ancient->m_sprite_hitpoint.get_baseSpriteBar_max_sprite());
-  m_window.draw(ptr_building_ancient->m_sprite_hitpoint.get_baseSpriteBar_value_sprite());
+  //draw buildings
+  // m_radiant_buildings.renderBuidlings(&m_window);
+  m_dire_buildings.renderBuidlings(&m_window);
 }
 
 
@@ -77,6 +73,12 @@ void dota2d::Game::init()
   // m_window.setPosition(getWindow_position());
   m_window.setFramerateLimit(60);
   m_window.setKeyRepeatEnabled(false);
+
+
+  //buildings init
+  // m_radiant_buildings.init_radiant();
+  m_dire_buildings.init_dire();
+
 
   // Camera init
   // ptr_camera->doReset(sf::FloatRect(0,0, m_window_width/2, m_window_height/2));

@@ -8,9 +8,19 @@
 #include "baseSprite.h"
 #include "baseLog.h"
 #include "baseEvent.h"
+#include "side-buildings.h"
 
-#include "./buildings/building-shrine.h"
-#include "./buildings/building-ancient.h"
+//  //buildings
+// #include "./buildings/building-fountain.h"
+// #include "./buildings/building-ancient.h"
+// #include "./buildings/building-barracks.h"
+// #include "./buildings/building-pillar.h"
+// #include "./buildings/building-tower.h"
+//
+// //buildings-usable
+// #include "./buildings/building-secretshop.h"
+// #include "./buildings/building-outpost.h"
+// #include "./buildings/building-shrine.h"
 
 
 namespace dota2d
@@ -26,9 +36,10 @@ namespace dota2d
     BaseSprite m_background_sprite;
     BaseEvent m_game_events;
     BaseCamera* ptr_camera = nullptr;
-    Shrine* ptr_building_shrine = nullptr;
-    Ancient* ptr_building_ancient = nullptr;
 
+    //buildings
+    // SideBuildings m_radiant_buildings;
+    SideBuildings m_dire_buildings;
 
     public:
       Game(sf::Vector2i _minmap,sf::Vector2i _maxmap,
@@ -44,8 +55,6 @@ namespace dota2d
               m_background_sprite.setTexture(bg_texture);
               m_background_sprite.setPosition(bg_position);
 
-              ptr_building_ancient = new Ancient(500,1000,10.2, 0.0 , 0.0, TeamSide::Radiant, ASSEST_BUILDING_ANCIENT, sf::Vector2f(150,150));
-              ptr_building_shrine = new Shrine(false,TeamSide::Radiant,ASSEST_BUILDING_SHRINE,sf::Vector2f(100,100));
               ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
               printGame_stats();
            };
@@ -53,7 +62,6 @@ namespace dota2d
       ~Game()
       {
         m_log.debug(" destoractor game called.");
-        delete ptr_building_shrine;
         delete ptr_camera;
       }
 
