@@ -26,23 +26,15 @@ void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::R
 
 
 
-
-
-
-
   //keyboard
-  if(sf::Keyboard::isKeyPressed(sf::Keyboard::Down))
-   std::cout << " keyboard pressed down live" <<std::endl;
-  else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-   std::cout << " keyboard pressed right live" <<std::endl;
-    if(sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
-     std::cout << " keyboard pressed left live" <<std::endl;
-    else if(sf::Keyboard::isKeyPressed(sf::Keyboard::Up))
-     std::cout << " keyboard pressed up live" <<std::endl;
-      // else if(sf::Keyboard::isKeyReleased(sf::Keyboard::Up))
-      // std::cout << " keyboard released up live " <<std::endl;
-    else if(sf::Mouse::isButtonPressed(sf::Mouse::Right))
-     std::cout << " mouse button preesed right" <<std::endl;
+  if(sf::Keyboard::isKeyPressed( (sf::Keyboard::Key) m_hotkeys.h_camera_down ))
+     _camera.doMove(_min_pos,_max_pos,camera_move_direction::Down);
+  if(sf::Keyboard::isKeyPressed( (sf::Keyboard::Key) m_hotkeys.h_camera_right ))
+     _camera.doMove(_min_pos,_max_pos,camera_move_direction::Right);
+  if(sf::Keyboard::isKeyPressed( (sf::Keyboard::Key) m_hotkeys.h_camera_left ))
+     _camera.doMove(_min_pos,_max_pos,camera_move_direction::Left);
+  if(sf::Keyboard::isKeyPressed( (sf::Keyboard::Key) m_hotkeys.h_camera_up ))
+     _camera.doMove(_min_pos,_max_pos,camera_move_direction::Up);
 }
 
 void dota2d::BaseEvent::inputs(sf::RenderWindow* _window, BaseCamera* _camera, sf::Vector2i _min_pos , sf::Vector2i _max_pos)

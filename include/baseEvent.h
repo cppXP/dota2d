@@ -5,6 +5,7 @@
 #include "baseLog.h"
 #include "baseCamera.h"
 #include "baseWindow.h"
+#include "event-config.h"
 
 namespace dota2d
 {
@@ -14,6 +15,7 @@ namespace dota2d
     BaseLog m_log;
 
   public:
+    Hotkeys m_hotkeys;
     BaseEvent();
     void inputs(sf::RenderWindow*, BaseCamera* , sf::Vector2i , sf::Vector2i);
 
