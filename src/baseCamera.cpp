@@ -41,6 +41,16 @@ void dota2d::BaseCamera::doReset(sf::FloatRect _value)
   m_camera.reset(_value);
 }
 
+void dota2d::BaseCamera::doZoom(float _zoomValue)
+{
+  m_camera.zoom(_zoomValue);
+}
+
+void dota2d::BaseCamera::doRotate(float _rotateValue)
+{
+  m_camera.rotate(_rotateValue);
+}
+
 void dota2d::BaseCamera::doMove(float _x, float _y)
 {
     m_camera.move(_x,_y);

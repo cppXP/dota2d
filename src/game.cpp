@@ -34,8 +34,8 @@ void dota2d::Game::updateCamera()
 {
   ptr_camera->doReset(sf::FloatRect(ptr_camera->getCamera_position().x, ptr_camera->getCamera_position().y, m_window_width/2, m_window_height/2));
   ptr_camera->doViewport(ptr_camera->getCamera_viewport());
-  // ptr_camera->doZoom(...;
-  // ptr_camera->doRotate(..);
+  ptr_camera->doZoom(ptr_camera->getCamera_zoom());
+  ptr_camera->doRotate(ptr_camera->getCamera_rotate());
 
   //is heron on center?
       // ptr_camera->doCenter(...);

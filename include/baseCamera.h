@@ -45,6 +45,8 @@ namespace dota2d
    void printCamera_stats();
    void doReset(sf::FloatRect);
    void doViewport(sf::FloatRect);
+   void doZoom(float);
+   void doRotate(float);
    void doCenter(sf::Vector2f);
    void doMove(float,float);
    void doMove(sf::Vector2i,sf::Vector2i,camera_move_direction);
