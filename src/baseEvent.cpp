@@ -39,14 +39,14 @@ void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::R
      if(sf::Keyboard::isKeyPressed(sf::Keyboard::Z))
      {
        std::cout << "zoom out.? zoom before=" << _camera.getCamera_zoom() << std::endl;
-       _camera.setCamera_zoom(_camera.getCamera_zoom() + 0.5);
+       _camera.setCamera_zoom(_camera.getCamera_zoom() + 0.1);
        std::cout << "zoom out.? zoom after=" << _camera.getCamera_zoom() << std::endl;
      }
      if(sf::Keyboard::isKeyPressed(sf::Keyboard::X))
      {
        std::cout << "zoom in.? zoom before=" << _camera.getCamera_zoom() << std::endl;
        if(_camera.getCamera_zoom()>=1.0)
-        _camera.setCamera_zoom(_camera.getCamera_zoom() - 0.5);
+        _camera.setCamera_zoom(_camera.getCamera_zoom() - 0.1);
        std::cout << "zoom in.? zoom after=" << _camera.getCamera_zoom() << std::endl;
      }
 

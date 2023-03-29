@@ -31,3 +31,13 @@
 
 #define ASSEST_BUILDING_RANGED_TOWER_DIRE "./assets/buildings/tower-dire.png"
 #define ASSEST_BUILDING_RANGED_TOWER_RADIANT "./assets/buildings/tower-radiant.png"
+
+
+
+// HUD
+//400x 85y
+#define ASSEST_GAME_HUD_CENTER_BOTTOM "./assets/game/hud/hud-bottom-center.png"
+
+//133x 85y
+#define ASSEST_GAME_HUD_LEFT_BOTTOM "./assets/game/hud/hud-bottom-left.png"
+#define ASSEST_GAME_HUD_RIGHT_BOTTOM "./assets/game/hud/hud-bottom-right.png"
