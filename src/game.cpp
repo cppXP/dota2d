@@ -37,6 +37,18 @@ void dota2d::Game::updateCamera()
   ptr_camera->doZoom(ptr_camera->getCamera_zoom());
   ptr_camera->doRotate(ptr_camera->getCamera_rotate());
 
+
+
+  //update hud to be incenter of camera
+  m_hud_bottom_left.setPosition
+  (
+      sf::Vector2f
+      (
+        (ptr_camera->getCamera_position().x+100) ,
+        (ptr_camera->getCamera_position().y+500)
+      )
+  );
+
   //is heron on center?
       // ptr_camera->doCenter(...);
 
@@ -57,6 +69,15 @@ void dota2d::Game::draw()
   //draw buildings
   // m_radiant_buildings.renderBuidlings(&m_window);
   m_dire_buildings.renderBuidlings(&m_window);
+
+
+
+
+    //hud things
+    m_window.draw(m_hud_bottom_left.getSprite());
+    m_window.draw(m_hud_bottom_right.getSprite());
+    m_window.draw(m_hud_bottom_center.getSprite());
+
 }
 
 

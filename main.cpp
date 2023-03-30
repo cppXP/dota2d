@@ -10,7 +10,7 @@
 #define MAXY 5000
 #define CAMERA_POSX 0
 #define CAMERA_POSY 0
-#define CAMERA_ZOOM 1.0
+#define CAMERA_ZOOM 1.5
 #define CAMERA_ROTATE 0.0
 #define CAMERA_SPEED 50
 #define CAMERA_BORDER 5

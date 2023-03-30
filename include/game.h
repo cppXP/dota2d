@@ -37,6 +37,10 @@ namespace dota2d
     BaseEvent m_game_events;
     BaseCamera* ptr_camera = nullptr;
 
+    BaseSprite m_hud_bottom_center;
+    BaseSprite m_hud_bottom_left;
+    BaseSprite m_hud_bottom_right;
+
     //buildings
     // SideBuildings m_radiant_buildings;
     SideBuildings m_dire_buildings;
@@ -54,6 +58,16 @@ namespace dota2d
               setMap_max_pos(_maxmap);
               m_background_sprite.setTexture(bg_texture);
               m_background_sprite.setPosition(bg_position);
+
+              m_hud_bottom_left.setTexture(ASSEST_GAME_HUD_LEFT_BOTTOM);
+              m_hud_bottom_left.setPosition(sf::Vector2f(0,0));
+
+              m_hud_bottom_right.setTexture(ASSEST_GAME_HUD_RIGHT_BOTTOM);
+              m_hud_bottom_right.setPosition(sf::Vector2f(0,0));
+
+              m_hud_bottom_center.setTexture(ASSEST_GAME_HUD_CENTER_BOTTOM);
+              m_hud_bottom_center.setPosition(sf::Vector2f(0,0));
+
 
               ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
               printGame_stats();
