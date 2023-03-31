@@ -55,7 +55,7 @@ int dota2d::BaseAttack::getPhysicalDamage() const
 }
 
 
-void dota2d::BaseAttack::printAttack_stats()
+void dota2d::BaseAttack::printAttack_stats() const
 {
     std::cout << "\n BaseAttack::printAttack_stats():"
          << "\n attack-range = " << getAttackRange()
