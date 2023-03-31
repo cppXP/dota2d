@@ -5,7 +5,6 @@
 
 #define LOG_FILE_NAME "dota2d-log"
 
-
 #define ASSEST_BUILDING_FOUNTAIN_DIRE "./assets/buildings/fountain-dire.png"
 #define ASSEST_BUILDING_FOUNTAIN_RADIANT "./assets/buildings/fountain-radiant.png"
 
@@ -41,3 +40,11 @@
 //133x 85y
 #define ASSEST_GAME_HUD_LEFT_BOTTOM "./assets/game/hud/hud-bottom-left.png"
 #define ASSEST_GAME_HUD_RIGHT_BOTTOM "./assets/game/hud/hud-bottom-right.png"
+
+
+
+
+//HEROS
+
+#define ASSEST_HERO_HERO1 "./assets/heros/hero1.png"
+#define ASSEST_HERO_HERO2 "./assets/heros/hero2.png"
