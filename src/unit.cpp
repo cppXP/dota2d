@@ -1,12 +1,6 @@
 #include "../include/unit.h"
 
 
-dota2d::Unit::Unit()
-{
-  setName("");
-  setSpawn_position(0.0 ,0.0);
-}
-
 void dota2d::Unit::setName(std::string _value)
 {
   m_name = _value;
