@@ -4,13 +4,15 @@
 #include "baseHealth.h"
 #include "baseSprite.h"
 #include "baseVision.h"
+#include "baseMana.h"
+
 
 namespace dota2d
 {
-  class BasicStats : public BaseAttack, public BaseSprite, public BaseVision,  public BaseHealth
+  class BasicStats : public BaseAttack, public BaseSprite, public BaseVision,  public BaseHealth, public BaseMana
   {
     public:
-      BasicStats() : BaseAttack() , BaseSprite() , BaseVision() , BaseHealth()
+      BasicStats() : BaseAttack() , BaseSprite() , BaseVision() , BaseHealth(), BaseMana()
       {
         setStun_duration(0);
         setSilence_duration(0);
@@ -29,7 +31,7 @@ namespace dota2d
       BasicStats(int _stun_d, int _silence_d, int _unattack_d, int _untarget_d,
                  int _teleport_cd,int _move_speed,int _teleport_ct,
                  int _gold_ps,int _gold,
-                 int _intel,int _streng,int _agili) : BaseAttack() , BaseSprite() , BaseVision() , BaseHealth()
+                 int _intel,int _streng,int _agili) : BaseAttack() , BaseSprite() , BaseVision() , BaseHealth(), BaseMana()
                  {
                    setTeleport_cooldown(_teleport_cd);
                    setMovement_speed(_move_speed);
@@ -52,7 +54,8 @@ namespace dota2d
                 ): BaseAttack(_attackrange,_attackspeed,_physicD,_magicD)
                  , BaseSprite(_textureTxt,_position)
                  , BaseVision(_dayv,_dayob,_nightv,_nightob,_invistype,_invisduration)
-                 , BaseHealth(_hp,_maxhp,_hpregen,_mana,_maxmana,_manaregen,_magicR,_physicR)
+                 , BaseHealth(_hp,_maxhp,_hpregen,_magicR,_physicR)
+                 , BaseMana(_mana,_maxmana,_manaregen)
                 {
                   setTeleport_cooldown(_teleport_cd);
                   setMovement_speed(_move_speed);
@@ -67,6 +70,7 @@ namespace dota2d
 
 
     protected:
+      sf::Vector2f m_move_destination;
       int m_stun_duration;
       int m_silence_duration;
       int m_unattackable_duration;
