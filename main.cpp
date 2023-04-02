@@ -10,13 +10,13 @@
 #define MAXY 5000
 #define CAMERA_POSX 0
 #define CAMERA_POSY 0
-#define CAMERA_ZOOM 1.5
+#define CAMERA_ZOOM 2.1
 #define CAMERA_ROTATE 0.0
 #define CAMERA_SPEED 50
 #define CAMERA_BORDER 5
 //ASSEST_GAME_BACKGROUND_TEXTURE_1 placed in assets-cofnig.h
-#define BG_POSX 2250
-#define BG_POSY 2250
+#define BG_POSX 2500
+#define BG_POSY 2500
 
 
 int main()
