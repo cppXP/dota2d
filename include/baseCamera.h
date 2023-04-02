@@ -32,17 +32,17 @@ namespace dota2d
    void setCamera_viewport(sf::FloatRect);
 
 
-   sf::Vector2i getCamera_position();
-   sf::FloatRect getCamera_viewport();
-   int getCamera_mouseBorder();
-   float getCamera_zoom();
-   int getCamera_speed();
-   float getCamera_rotate();
-   sf::View getView();
+   sf::Vector2i getCamera_position() const;
+   sf::FloatRect getCamera_viewport() const;
+   int getCamera_mouseBorder() const;
+   float getCamera_zoom() const;
+   int getCamera_speed() const;
+   float getCamera_rotate() const;
+   sf::View getView() const;
 
 
    //actions
-   void printCamera_stats();
+   void printCamera_stats() const;
    void doReset(sf::FloatRect);
    void doViewport(sf::FloatRect);
    void doZoom(float);

@@ -31,7 +31,7 @@ dota2d::BaseCamera::BaseCamera(
 }
 
 
-sf::View dota2d::BaseCamera::getView()
+sf::View dota2d::BaseCamera::getView() const
 {
   return m_camera;
 }
@@ -147,38 +147,38 @@ void dota2d::BaseCamera::setCamera_mouseBorder(int _mborder)
 
 
 
-sf::Vector2i dota2d::BaseCamera::getCamera_position()
+sf::Vector2i dota2d::BaseCamera::getCamera_position() const
 {
   return m_camera_position;
 }
 
-sf::FloatRect dota2d::BaseCamera::getCamera_viewport()
+sf::FloatRect dota2d::BaseCamera::getCamera_viewport() const
 {
   return m_camera_viewport;
 }
 
-int dota2d::BaseCamera::getCamera_mouseBorder()
+int dota2d::BaseCamera::getCamera_mouseBorder() const
 {
   return m_camera_mouseBorder;
 }
 
-float dota2d::BaseCamera::getCamera_zoom()
+float dota2d::BaseCamera::getCamera_zoom() const
 {
   return m_camera_zoom;
 }
 
-int dota2d::BaseCamera::getCamera_speed()
+int dota2d::BaseCamera::getCamera_speed() const
 {
   return m_camera_speed;
 }
 
-float dota2d::BaseCamera::getCamera_rotate()
+float dota2d::BaseCamera::getCamera_rotate() const
 {
   return m_camera_rotate;
 }
 
 
-void dota2d::BaseCamera::printCamera_stats()
+void dota2d::BaseCamera::printCamera_stats() const
 {
   std::cout << "baseCamera::PrintCamera_stats(): "
   // << "\n camera_pos = " << getCamera_position()
