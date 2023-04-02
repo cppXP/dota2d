@@ -3,6 +3,21 @@
 
 #include <SFML/Graphics.hpp>
 
+
+#ifndef EVENT_CONFIG_DEVELOPER_TOOLS
+#define EVENT_CONFIG_DEVELOPER_TOOLS
+#define EVENT_DEV_TOOL_LOG(message) std::cout << "[EVENT-DEV-TOOL] : " << message << std::endl
+#endif
+
+
+#define EVENT_CONFIG_DEBUG_EVENTS 0
+#if EVENT_CONFIG_DEBUG_EVENTS
+#define EVENT_DEBUG_LOG(message) std::cout << "[EVENT-DEBUG] : " << message << std::endl
+#else
+#define EVENT_DEBUG_LOG(message)
+#endif
+
+
 namespace dota2d
 {
   struct Hotkeys //h_ means hotkey
