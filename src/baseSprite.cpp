@@ -52,7 +52,7 @@ sf::Texture dota2d::BaseSprite::getTexture() const
 {
   return m_texture;
 }
-sf::Sprite dota2d::BaseSprite::getSprite() //const
+sf::Sprite dota2d::BaseSprite::getSprite() const
 {
   return m_sprite;
 }

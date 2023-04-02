@@ -21,7 +21,7 @@ namespace dota2d
 
       sf::Vector2f getPosition() const;
       sf::Texture getTexture() const;
-      sf::Sprite getSprite() ; //const
+      sf::Sprite getSprite() const;
       std::string getTexture_path() const;
 
       void printSprite_stats() const;
