@@ -21,7 +21,6 @@ namespace dota2d
 
   protected:
     void live_inputs(sf::Event,BaseCamera&,sf::RenderWindow*,sf::Vector2i ,sf::Vector2i);
-    // void check_is_hotkey_pressed(const sf::Event&);
 
     // Window
     void ew_gained_focus(sf::Event);
