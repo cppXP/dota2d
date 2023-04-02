@@ -67,7 +67,7 @@ void dota2d::Game::draw()
   //render things.
 
   //draw buildings
-  // m_radiant_buildings.renderBuidlings(&m_window);
+  m_radiant_buildings.renderBuidlings(&m_window);
   m_dire_buildings.renderBuidlings(&m_window);
 
 
@@ -97,7 +97,7 @@ void dota2d::Game::init()
 
 
   //buildings init
-  // m_radiant_buildings.init_radiant();
+  m_radiant_buildings.init_radiant();
   m_dire_buildings.init_dire();
 
 

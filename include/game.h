@@ -42,7 +42,7 @@ namespace dota2d
     BaseSprite m_hud_bottom_right;
 
     //buildings
-    // SideBuildings m_radiant_buildings;
+    SideBuildings m_radiant_buildings;
     SideBuildings m_dire_buildings;
 
     public:
