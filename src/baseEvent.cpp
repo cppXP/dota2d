@@ -38,7 +38,7 @@ void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::R
 
 
 
- #ifdef EVENT_CONFIG_DEVELOPER_TOOLS
+ #if EVENT_CONFIG_DEVELOPER_TOOLS == 1
 
 
      if(sf::Keyboard::isKeyPressed(sf::Keyboard::F1))

@@ -4,9 +4,11 @@
 #include <SFML/Graphics.hpp>
 
 
-#ifndef EVENT_CONFIG_DEVELOPER_TOOLS
-#define EVENT_CONFIG_DEVELOPER_TOOLS
+#define EVENT_CONFIG_DEVELOPER_TOOLS 1
+#if EVENT_CONFIG_DEVELOPER_TOOLS == 1
 #define EVENT_DEV_TOOL_LOG(message) std::cout << "[EVENT-DEV-TOOL] : " << message << std::endl
+#else
+#define EVENT_DEV_TOOL_LOG(message)
 #endif
 
 
