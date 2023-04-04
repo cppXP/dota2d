@@ -7,6 +7,10 @@
 #include "baseWindow.h"
 #include "event-config.h"
 
+//for function em_pressed (event mouse button pressed)
+#include "unit.h"
+#include "baseBuilding.h"
+
 namespace dota2d
 {
   class BaseEvent
@@ -17,7 +21,11 @@ namespace dota2d
   public:
     Hotkeys m_hotkeys;
     BaseEvent();
-    void inputs(sf::RenderWindow*, BaseCamera* , sf::Vector2i , sf::Vector2i);
+    void inputs
+    (
+        sf::RenderWindow*, BaseCamera* , sf::Vector2i , sf::Vector2i,
+        Unit*,Unit*,BaseBuilding* //current-unit , target-unit,  target-building.
+    );
 
   protected:
     void live_inputs(sf::Event,BaseCamera&,sf::RenderWindow*,sf::Vector2i ,sf::Vector2i);
@@ -32,7 +40,7 @@ namespace dota2d
 
 
     // Mouse
-    void em_pressed(sf::Event);
+    void em_pressed(sf::Event,Unit*, Unit*, BaseBuilding*);
     void em_released(sf::Event);
     void em_moved(sf::Event);
     void em_wheel_moved(sf::Event);

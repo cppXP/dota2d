@@ -70,7 +70,9 @@ void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::R
 
 }
 
-void dota2d::BaseEvent::inputs(sf::RenderWindow* _window, BaseCamera* _camera, sf::Vector2i _min_pos , sf::Vector2i _max_pos)
+void dota2d::BaseEvent::inputs(sf::RenderWindow* _window, BaseCamera* _camera,
+    sf::Vector2i _min_pos , sf::Vector2i _max_pos,
+    Unit* _current_unit, Unit* _target_unit, BaseBuilding* _target_building)
 {
   sf::Event event;
   live_inputs(event, (*_camera), &(*_window), _min_pos, _max_pos);
@@ -101,7 +103,7 @@ void dota2d::BaseEvent::inputs(sf::RenderWindow* _window, BaseCamera* _camera, s
 
       //mouse
       case sf::Event::MouseButtonPressed:
-        em_pressed(event);
+        em_pressed(event, _current_unit, _target_unit, _target_building);
         break;
       case sf::Event::MouseButtonReleased:
         em_released(event);
@@ -164,12 +166,17 @@ void dota2d::BaseEvent::ew_mouse_entered(sf::Event _event)
 }
 
 // Mouse
-void dota2d::BaseEvent::em_pressed(sf::Event _event)
+void dota2d::BaseEvent::em_pressed(sf::Event _event,
+                Unit* _current_unit, Unit* _target_unit, BaseBuilding* _target_building)
 {
   EVENT_DEBUG_LOG("mouse pressed.");
   if(_event.mouseButton.button == sf::Mouse::Left)
   {
     EVENT_DEBUG_LOG("mouse left pressed.");
+    if(_current_unit != nullptr)
+      std::cout << "current unit found, his name is = " << _current_unit->getName() << std::endl;
+    else
+      std::cout << "current unit notfound\n";
   }
   else if(_event.mouseButton.button == sf::Mouse::Right)
   {
