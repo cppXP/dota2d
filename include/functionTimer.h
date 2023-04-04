@@ -18,14 +18,13 @@ namespace dota2d
           std::string function_name;
 
       public:
-          FunctionTimer(std::string _text)
+          void init(std::string _text)
           {
             pr_StartTime = std::chrono::high_resolution_clock::now();
             function_name = _text;
             std::cout << "function " << function_name << " has been starts.\n";
           }
-
-          ~FunctionTimer()
+          void finish()
           {
             pr_EndTime = std::chrono::high_resolution_clock::now();
 
@@ -34,6 +33,7 @@ namespace dota2d
             auto Duration = EndTimeMs - StartTimeMs;
             std::cout << "function " << function_name<< " took " << Duration << "ms to finish.\n";
           }
+
     };
 
 }
