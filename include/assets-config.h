@@ -49,4 +49,4 @@
 //HEROS
 
 #define ASSEST_HERO_AXE "./assets/heros/hero1.png"
-#define ASSEST_HERO_HERO2 "./assets/heros/hero2.png"
+#define ASSEST_HERO_DAZZLE "./assets/heros/hero2.png"
