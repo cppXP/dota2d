@@ -2,6 +2,7 @@
 #define ASSEST_GAME_BACKGROUND_TEXTURE_1 "./assets/game/game-background.jpg"
 #define ASSEST_GAME_BACKGROUND_TEXTURE_2 "./assets/game/tem-map.png"
 #define ASSEST_GAME_BACKGROUND_TEXTURE_3 "./assets/game/map1-v1.png"
+#define ASSEST_GAME_FONT_DEFAULT "./assets/game/fonts/arial.ttf"
 
 #define LOG_FILE_NAME "dota2d-log"
 
@@ -30,6 +31,7 @@
 
 #define ASSEST_BUILDING_RANGED_TOWER_DIRE "./assets/buildings/tower-dire.png"
 #define ASSEST_BUILDING_RANGED_TOWER_RADIANT "./assets/buildings/tower-radiant.png"
+
 
 
 
