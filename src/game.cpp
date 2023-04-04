@@ -64,19 +64,24 @@ void dota2d::Game::draw()
   //map things
   m_window.draw(m_background_sprite.getSprite()); //background-sprite
 
-  //render things.
+  //render heroes
+  // m_window.draw(m_ptr_test1->render);
+  m_ptr_test1->render(&m_window);
+
+
+
 
   //draw buildings
-  m_radiant_buildings.renderBuidlings(&m_window);
-  m_dire_buildings.renderBuidlings(&m_window);
+  // m_radiant_buildings.renderBuidlings(&m_window);
+  // m_dire_buildings.renderBuidlings(&m_window);
 
 
 
 
     //hud things
-    m_window.draw(m_hud_bottom_left.getSprite());
-    m_window.draw(m_hud_bottom_right.getSprite());
-    m_window.draw(m_hud_bottom_center.getSprite());
+    // m_window.draw(m_hud_bottom_left.getSprite());
+    // m_window.draw(m_hud_bottom_right.getSprite());
+    // m_window.draw(m_hud_bottom_center.getSprite());
 
 }
 
@@ -100,6 +105,7 @@ void dota2d::Game::init()
   m_radiant_buildings.init_radiant();
   m_dire_buildings.init_dire();
 
+  m_ptr_test1 = new Axe;
 
   // Camera init
   // ptr_camera->doReset(sf::FloatRect(0,0, m_window_width/2, m_window_height/2));

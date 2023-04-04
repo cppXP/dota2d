@@ -9,6 +9,10 @@
 #include "baseLog.h"
 #include "baseEvent.h"
 #include "side-buildings.h" //init buildings
+#include "hero.h"
+
+#include "./heros/axe.h"
+
 
 namespace dota2d
 {
@@ -31,6 +35,10 @@ namespace dota2d
     //buildings
     SideBuildings m_radiant_buildings;
     SideBuildings m_dire_buildings;
+
+    //heroes
+    Hero* m_ptr_test1 = nullptr;
+
 
     public:
       Game(sf::Vector2i _minmap,sf::Vector2i _maxmap,
