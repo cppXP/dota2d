@@ -46,5 +46,5 @@
 
 //HEROS
 
-#define ASSEST_HERO_HERO1 "./assets/heros/hero1.png"
+#define ASSEST_HERO_AXE "./assets/heros/hero1.png"
 #define ASSEST_HERO_HERO2 "./assets/heros/hero2.png"
