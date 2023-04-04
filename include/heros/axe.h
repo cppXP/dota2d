@@ -25,7 +25,7 @@ namespace dota2d
       : Hero
       (
           0,3,
-          HERO_SPAWN_POSITION_DIRE, "Axe-hero" , FaceDirectionType::North,
+          HERO_SPAWN_POSITION_DIRE, "Axe" , FaceDirectionType::North,
           0,0,0,0,
           5, 25, 2,
           1, 750,
