@@ -8,20 +8,7 @@
 #include "baseSprite.h"
 #include "baseLog.h"
 #include "baseEvent.h"
-#include "side-buildings.h"
-
-//  //buildings
-// #include "./buildings/building-fountain.h"
-// #include "./buildings/building-ancient.h"
-// #include "./buildings/building-barracks.h"
-// #include "./buildings/building-pillar.h"
-// #include "./buildings/building-tower.h"
-//
-// //buildings-usable
-// #include "./buildings/building-secretshop.h"
-// #include "./buildings/building-outpost.h"
-// #include "./buildings/building-shrine.h"
-
+#include "side-buildings.h" //init buildings
 
 namespace dota2d
 {
