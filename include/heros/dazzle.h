@@ -25,13 +25,13 @@ namespace dota2d
       : Hero
       (
           0,3,
-          sf::Vector2f(10.0, 70.0), "Dazzle" , FaceDirectionType::North, //HERO_SPAWN_POSITION_DIRE
+          HERO_SPAWN_POSITION_DIRE, "Dazzle" , FaceDirectionType::North,
           0,0,0,0,
           5, 25, 2,
           1, 750,
           0, 10, 0,
           25, 10, 100, 0,
-          ASSEST_HERO_DAZZLE, HERO_SPAWN_POSITION_DIRE,
+          ASSEST_HERO_DAZZLE, sf::Vector2f(10.0, 200.0), 
           10, 10, 10, 10, HERO_DEFAULT_INVISIBLETYPE, 0,
           800, 800, 1.7, 400, 400, 1.8, 0 , 25
       )
