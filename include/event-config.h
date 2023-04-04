@@ -11,7 +11,7 @@
 
 
 #define EVENT_CONFIG_DEBUG_EVENTS 0
-#if EVENT_CONFIG_DEBUG_EVENTS
+#if EVENT_CONFIG_DEBUG_EVENTS == 1
 #define EVENT_DEBUG_LOG(message) std::cout << "[EVENT-DEBUG] : " << message << std::endl
 #else
 #define EVENT_DEBUG_LOG(message)
