@@ -11,7 +11,11 @@
 #include "side-buildings.h" //init buildings
 #include "hero.h"
 
-#include "./heros/axe.h"
+#include "hero-list.h"
+
+
+#include "functionTimer.h"
+// #include <array>
 
 
 namespace dota2d
@@ -20,6 +24,8 @@ namespace dota2d
   {
   private:
     BaseLog m_log;
+    FunctionTimer m_gameFunctionsTimer;
+
 
   protected:
     sf::Vector2i m_map_minimum_position;
@@ -28,16 +34,21 @@ namespace dota2d
     BaseEvent m_game_events;
     BaseCamera* ptr_camera = nullptr;
 
-    BaseSprite m_hud_bottom_center;
-    BaseSprite m_hud_bottom_left;
-    BaseSprite m_hud_bottom_right;
+
 
     //buildings
     SideBuildings m_radiant_buildings;
     SideBuildings m_dire_buildings;
 
+    // targets and selection hero/building
+    Unit* m_current_unit = nullptr; //will hold player as myHero
+    Unit* m_target_unit = nullptr; //will hold clicked/targeted enemy
+    BaseBuilding* m_target_building = nullptr; //will hold clicked/targeted enemy building
+
     //heroes
-    Hero* m_ptr_test1 = nullptr;
+    Hero* m_heros[2] = {nullptr,nullptr};
+    // std::array<Hero*, 10> m_heros =
+
 
 
     public:
@@ -49,29 +60,25 @@ namespace dota2d
            {
               m_log.set_pre_message(" gameLog : ");
               m_log.debug("game constractor called.");
+
+              //map things
               setMap_min_pos(_minmap);
               setMap_max_pos(_maxmap);
               m_background_sprite.setTexture(bg_texture);
               m_background_sprite.setPosition(bg_position);
 
-              m_hud_bottom_left.setTexture(ASSEST_GAME_HUD_LEFT_BOTTOM);
-              m_hud_bottom_left.setPosition(sf::Vector2f(0,0));
-
-              m_hud_bottom_right.setTexture(ASSEST_GAME_HUD_RIGHT_BOTTOM);
-              m_hud_bottom_right.setPosition(sf::Vector2f(0,0));
-
-              m_hud_bottom_center.setTexture(ASSEST_GAME_HUD_CENTER_BOTTOM);
-              m_hud_bottom_center.setPosition(sf::Vector2f(0,0));
-
-
+              //init camera
               ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
-              printGame_stats();
            };
 
       ~Game()
       {
         m_log.debug(" destoractor game called.");
         delete ptr_camera;
+        delete m_target_unit;
+        delete m_target_building;
+        delete m_current_unit;
+        delete m_heros[2];
       }
 
 
