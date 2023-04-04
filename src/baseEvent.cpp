@@ -26,7 +26,7 @@ void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::R
 
 
 
-  //keyboard
+  // Move Camera By Keyboard Movement LIVE
   if(sf::Keyboard::isKeyPressed( (sf::Keyboard::Key) m_hotkeys.h_camera_down ))
      _camera.doMove(_min_pos,_max_pos,camera_move_direction::Down);
   if(sf::Keyboard::isKeyPressed( (sf::Keyboard::Key) m_hotkeys.h_camera_right ))
@@ -40,6 +40,10 @@ void dota2d::BaseEvent::live_inputs(sf::Event _event, BaseCamera& _camera, sf::R
 
  #if EVENT_CONFIG_DEVELOPER_TOOLS == 1
 
+     if(sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
+     {
+       ew_safe_close(_event, (*_window));
+     }
 
      if(sf::Keyboard::isKeyPressed(sf::Keyboard::F1))
      {
@@ -76,7 +80,7 @@ void dota2d::BaseEvent::inputs(sf::RenderWindow* _window, BaseCamera* _camera, s
     {
       //window
       case sf::Event::Closed:
-        ew_safe_close(event);
+        ew_safe_close(event, (*_window));
         break;
       case sf::Event::GainedFocus:
         ew_gained_focus(event);
@@ -133,9 +137,10 @@ void dota2d::BaseEvent::ew_gained_focus(sf::Event _event)
   EVENT_DEBUG_LOG("window gained focus.");
 }
 
-void dota2d::BaseEvent::ew_safe_close(sf::Event _event)
+void dota2d::BaseEvent::ew_safe_close(sf::Event _event, sf::RenderWindow& window)
 {
   EVENT_DEBUG_LOG("window safe close.");
+  window.close();
 }
 
 void dota2d::BaseEvent::ew_lost_focus(sf::Event _event)

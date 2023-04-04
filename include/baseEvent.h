@@ -24,7 +24,7 @@ namespace dota2d
 
     // Window
     void ew_gained_focus(sf::Event);
-    void ew_safe_close(sf::Event);
+    void ew_safe_close(sf::Event, sf::RenderWindow&);
     void ew_lost_focus(sf::Event);
     void ew_resized(sf::Event);
     void ew_mouse_leaves(sf::Event);
