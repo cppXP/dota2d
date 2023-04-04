@@ -23,22 +23,10 @@ namespace dota2d
   struct Hotkeys //h_ means hotkey
   {
     // Level
-    int h_1_level;
-    int h_2_level;
-    int h_3_level;
-    int h_4_level;
-    int h_5_level;
-    int h_6_level;
+    int h_levels[6];
 
     // Item
-    int h_1_item;
-    int h_2_item;
-    int h_3_item;
-    int h_4_item;
-    int h_5_item;
-    int h_6_item;
-    int h_7_item; //jungle item
-    int h_8_item; //teleport
+    int h_items[8]; //item 6-> jungle item and item 7-> teleport
 
 
     // Action
@@ -80,29 +68,27 @@ namespace dota2d
     int h_camera_left;
     int h_camera_up;
     int h_camera_down;
-    // int h_camera_mouseBorder_value = 5; //later remove this from BaseCamera and add here.
-
 
 
     Hotkeys()
     {
       // Level
-      h_1_level = sf::Keyboard::Q;
-      h_2_level = sf::Keyboard::W;
-      h_3_level = sf::Keyboard::E;
-      h_4_level = sf::Keyboard::D;
-      h_5_level = sf::Keyboard::F;
-      h_6_level = sf::Keyboard::R;
+      h_levels[0] = sf::Keyboard::Q;
+      h_levels[1] = sf::Keyboard::W;
+      h_levels[2] = sf::Keyboard::E;
+      h_levels[3] = sf::Keyboard::D;
+      h_levels[4] = sf::Keyboard::F;
+      h_levels[5] = sf::Keyboard::R;
 
       // Item
-      h_1_item = sf::Keyboard::Z;
-      h_2_item = sf::Keyboard::X;
-      h_3_item = sf::Keyboard::C;
-      h_4_item = sf::Keyboard::V;
-      h_5_item = sf::Keyboard::B;
-      h_6_item = sf::Keyboard::N;
-      h_7_item = sf::Keyboard::Space; //jungle item
-      h_8_item = sf::Keyboard::Tilde; //teleport
+      h_items[0] = sf::Keyboard::Z;
+      h_items[1] = sf::Keyboard::X;
+      h_items[2] = sf::Keyboard::C;
+      h_items[3] = sf::Keyboard::V;
+      h_items[4] = sf::Keyboard::B;
+      h_items[5] = sf::Keyboard::N;
+      h_items[6] = sf::Keyboard::Space; //jungle item
+      h_items[7] = sf::Keyboard::Tilde; //teleport
 
 
       // Action
@@ -144,7 +130,6 @@ namespace dota2d
       h_camera_left = sf::Keyboard::Left;
       h_camera_up = sf::Keyboard::Up;
       h_camera_down = sf::Keyboard::Down;
-      // h_camera_mouseBorder_value = 5; //later remove this from BaseCamera and add here.
     }
   };
 
