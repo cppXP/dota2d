@@ -6,6 +6,16 @@
 #include "basicStats.h"
 
 
+#define UNIT_CONFIG_NAME_X_MARGIN -50
+#define UNIT_CONFIG_NAME_Y_MARGIN -111
+
+#define UNIT_CONFIG_HEALTH_X_MARGIN -50
+#define UNIT_CONFIG_HEALTH_Y_MARGIN -60
+
+#define UNIT_CONFIG_MANA_X_MARGIN -50
+#define UNIT_CONFIG_MANA_Y_MARGIN -50
+
+
 namespace dota2d
 {
   enum class FaceDirectionType
@@ -86,6 +96,10 @@ namespace dota2d
 
       //action
       void printUnit_stats() const;
+      void render(sf::RenderWindow*);
+
+
+
   };
 }
 #endif
