@@ -88,7 +88,7 @@ void dota2d::Game::init()
   m_window.create
   (
     sf::VideoMode(getWindow_width(),getWindow_height())
-    , getWindow_title(), sf::Style::Fullscreen
+    , getWindow_title(), sf::Style::Default
   );
         // m_window.setPosition(getWindow_position());
   m_window.setFramerateLimit(60);
