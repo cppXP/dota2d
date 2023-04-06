@@ -76,7 +76,8 @@ void dota2d::SideBuildings::init_radiant()
   m_top_towers[2] = new Tower(100, 10, 1, 1, 1300, 1300, 1.0, 10,0, team, ASSEST_BUILDING_RANGED_TOWER_RADIANT, sf::Vector2f(500, 3000));
 
   //middle towers
-  m_middle_towers[0] = new Tower(100, 10, 1, 1, 2100, 2100, 1.0, 10,0, team, ASSEST_BUILDING_RANGED_TOWER_RADIANT, sf::Vector2f(3353, 3000));
+  m_middle_towers[0] = new Tower(100, 10, 1, 1, 2100, 2100, 1.0, 10,0, team, ASSEST_BUILDING_RANGED_TOWER_RADIANT, sf::Vector2f(2158, 2593));
+
   m_middle_towers[1] = new Tower(100, 10, 1, 1, 2200, 2200, 1.0, 10,0, team, ASSEST_BUILDING_RANGED_TOWER_RADIANT, sf::Vector2f(4060, 3000));
   m_middle_towers[2] = new Tower(100, 10, 1, 1, 2300, 2300, 1.0, 10,0, team, ASSEST_BUILDING_RANGED_TOWER_RADIANT, sf::Vector2f(854, 3000));
   m_middle_towers[3] = new Tower(100, 10, 1, 1, 2400, 2400, 1.0, 10,0, team, ASSEST_BUILDING_RANGED_TOWER_RADIANT, sf::Vector2f(1900, 3000));
