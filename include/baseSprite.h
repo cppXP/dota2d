@@ -18,8 +18,10 @@ namespace dota2d
       BaseSprite(std::string, sf::Vector2f);
       void setTexture(std::string);
       void setPosition(sf::Vector2f);
+      void setOrigin(sf::Vector2f);
 
       sf::Vector2f getPosition() const;
+      sf::Vector2f getOrigin() const;
       sf::Texture getTexture() const;
       sf::Sprite getSprite() const;
       std::string getTexture_path() const;

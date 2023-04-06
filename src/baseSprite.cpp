@@ -43,7 +43,15 @@ void dota2d::BaseSprite::setPosition(sf::Vector2f _pos)
   m_sprite.setOrigin(m_texture.getSize().x/2, m_texture.getSize().y/2);
 }
 
+void dota2d::BaseSprite::setOrigin(sf::Vector2f _pos)
+{
+  m_sprite.setOrigin(_pos);
+}
 
+sf::Vector2f dota2d::BaseSprite::getOrigin() const
+{
+  return m_sprite.getOrigin();
+}
 sf::Vector2f dota2d::BaseSprite::getPosition() const
 {
   return m_position;
