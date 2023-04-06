@@ -31,12 +31,13 @@ namespace dota2d
           1, 750,
           0, 10, 0,
           25, 10, 100, 0,
-          ASSEST_HERO_DAZZLE, sf::Vector2f(10.0, 200.0), 
+          ASSEST_HERO_DAZZLE, sf::Vector2f(2325,2332),
           10, 10, 10, 10, HERO_DEFAULT_INVISIBLETYPE, 0,
-          800, 800, 1.7, 400, 400, 1.8, 0 , 25
+          650, 800, 1.7, 250, 400, 1.8, 0 , 25
       )
           {
-
+                m_sprite_hitpoint.set_baseSpriteBar_percent( 650 / (800/100) );
+                m_sprite_mana.set_baseSpriteBar_percent( 250 / (400/100) );
           }
   };
 }
