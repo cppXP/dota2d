@@ -1,52 +1,72 @@
-#define ASSEST_DEFAULT_TEXTURE "./assets/default-texture.jpg"
-#define ASSEST_GAME_BACKGROUND_TEXTURE_1 "./assets/game/game-background.jpg"
-#define ASSEST_GAME_BACKGROUND_TEXTURE_2 "./assets/game/tem-map.png"
-#define ASSEST_GAME_BACKGROUND_TEXTURE_3 "./assets/game/map1-v1.png"
-#define ASSEST_GAME_FONT_DEFAULT "./assets/game/fonts/arial.ttf"
 
-#define LOG_FILE_NAME "dota2d-log"
 
-#define ASSEST_BUILDING_FOUNTAIN_DIRE "./assets/buildings/fountain-dire.png"
-#define ASSEST_BUILDING_FOUNTAIN_RADIANT "./assets/buildings/fountain-radiant.png"
+// ============================================ SOUNDs ============================================
 
-#define ASSEST_BUILDING_ANCIENT_DIRE "./assets/buildings/ancient-dire.png"
-#define ASSEST_BUILDING_ANCIENT_RADIANT "./assets/buildings/ancient-radiant.png"
+// ============================================ FONTs ============================================
+#define ASSEST_GAME_FONT_DEFAULT "./assets/fonts/arial.ttf"
 
-#define ASSEST_BUILDING_SECRETSHOP "./assets/buildings/secretshop.png"
-
-#define ASSEST_BUILDING_OUTPOST_DIRE "./assets/buildings/outpost-dire.png"
-#define ASSEST_BUILDING_OUTPOST_RADIANT "./assets/buildings/outpost-radiant.png"
-
-#define ASSEST_BUILDING_SHRINE_DIRE "./assets/buildings/shrine-dire.png"
-#define ASSEST_BUILDING_SHRINE_RADIANT "./assets/buildings/shrine-radiant.png"
-
-#define ASSEST_BUILDING_PILLAR_DIRE "./assets/buildings/pillar-dire.png"
-#define ASSEST_BUILDING_PILLAR_RADIANT "./assets/buildings/pillar-radiant.png"
-
-#define ASSEST_BUILDING_MELEE_BARRACKS_DIRE "./assets/buildings/barracks-melee-dire.png"
-#define ASSEST_BUILDING_MELEE_BARRACKS_RADIANT "./assets/buildings/barracks-melee-radiant.png"
-
-#define ASSEST_BUILDING_RANGED_BARRACKS_DIRE "./assets/buildings/barracks-ranged-dire.png"
-#define ASSEST_BUILDING_RANGED_BARRACKS_RADIANT "./assets/buildings/barracks-ranged-radiant.png"
-
-#define ASSEST_BUILDING_RANGED_TOWER_DIRE "./assets/buildings/tower-dire.png"
-#define ASSEST_BUILDING_RANGED_TOWER_RADIANT "./assets/buildings/tower-radiant.png"
+// ============================================ LOGs ============================================
+#define LOG_FILE_NAME "./logs/main-dota2d-log"
 
 
 
 
-// HUD
+
+
+// ============================================ TEXTUREs =============================================================
+
+// --------------------------- TERAINs ---------------------------
+#define ASSEST_DEFAULT_TEXTURE "./assets/textures/terain/old/default-texture.png"
+#define ASSEST_TERAIN_TEXTURE_3 "./assets/textures/terain/size3-result.png"
+// #define ASSEST_TERAIN_TEXTURE_2 "./assets/textures/terain/size2-result.png"
+// #define ASSEST_TERAIN_TEXTURE_1 "./assets/textures/terain/size1-result.png"
+
+// --------------------------- BUILDINGs ---------------------------
+#define ASSEST_BUILDING_FOUNTAIN_DIRE "./assets/textures/building/fountain-dire.png"
+#define ASSEST_BUILDING_FOUNTAIN_RADIANT "./assets/textures/building/fountain-radiant.png"
+
+#define ASSEST_BUILDING_ANCIENT_DIRE "./assets/textures/building/ancient-dire.png"
+#define ASSEST_BUILDING_ANCIENT_RADIANT "./assets/textures/building/ancient-radiant.png"
+
+#define ASSEST_BUILDING_SECRETSHOP "./assets/textures/building/secretshop.png"
+
+#define ASSEST_BUILDING_OUTPOST_DIRE "./assets/textures/building/outpost-dire.png"
+#define ASSEST_BUILDING_OUTPOST_RADIANT "./assets/textures/building/outpost-radiant.png"
+
+#define ASSEST_BUILDING_SHRINE_DIRE "./assets/textures/building/shrine-dire.png"
+#define ASSEST_BUILDING_SHRINE_RADIANT "./assets/textures/building/shrine-radiant.png"
+
+#define ASSEST_BUILDING_PILLAR_DIRE "./assets/textures/building/pillar-dire.png"
+#define ASSEST_BUILDING_PILLAR_RADIANT "./assets/textures/building/pillar-radiant.png"
+
+#define ASSEST_BUILDING_MELEE_BARRACKS_DIRE "./assets/textures/building/barracks-melee-dire.png"
+#define ASSEST_BUILDING_MELEE_BARRACKS_RADIANT "./assets/textures/building/barracks-melee-radiant.png"
+
+#define ASSEST_BUILDING_RANGED_BARRACKS_DIRE "./assets/textures/building/barracks-ranged-dire.png"
+#define ASSEST_BUILDING_RANGED_BARRACKS_RADIANT "./assets/textures/building/barracks-ranged-radiant.png"
+
+#define ASSEST_BUILDING_RANGED_TOWER_DIRE "./assets/textures/building/tower-dire.png"
+#define ASSEST_BUILDING_RANGED_TOWER_RADIANT "./assets/textures/building/tower-radiant.png"
+
+
+// --------------------------- OBJECTs ---------------------------
+
+
+// --------------------------- ITEMs ---------------------------
+
+
+// --------------------------- ABILITYs ---------------------------
+
+
+// --------------------------- HUDs ---------------------------
 //400x 85y
-#define ASSEST_GAME_HUD_CENTER_BOTTOM "./assets/game/hud/hud-bottom-center.png"
-
+#define ASSEST_GAME_HUD_CENTER_BOTTOM "./assets/textures/hud/hud-bottom-center.png"
 //133x 85y
-#define ASSEST_GAME_HUD_LEFT_BOTTOM "./assets/game/hud/hud-bottom-left.png"
-#define ASSEST_GAME_HUD_RIGHT_BOTTOM "./assets/game/hud/hud-bottom-right.png"
+#define ASSEST_GAME_HUD_LEFT_BOTTOM "./assets/textures/hud/hud-bottom-left.png"
+#define ASSEST_GAME_HUD_RIGHT_BOTTOM "./assets/textures/hud/hud-bottom-right.png"
 
-
-
-
-//HEROS
-
-#define ASSEST_HERO_AXE "./assets/heros/hero1.png"
-#define ASSEST_HERO_DAZZLE "./assets/heros/hero2.png"
+// --------------------------- HEROes ---------------------------
+#define ASSEST_HERO_AXE "./assets/textures/hero/axe.png"
+#define ASSEST_HERO_DAZZLE "./assets/textures/hero/dazzle.png"
+#define ASSEST_HERO_CRYSTALMAIDEN "./assets/textures/hero/crystalmaiden.png"
+#define ASSEST_HERO_DISRUPTOR "./assets/textures/hero/disruptor.png"
