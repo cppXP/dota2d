@@ -181,6 +181,8 @@ void dota2d::BaseEvent::em_pressed(sf::Event _event,
   else if(_event.mouseButton.button == sf::Mouse::Right)
   {
     EVENT_DEBUG_LOG("mouse right pressed.");
+    // if(_current_unit != nullptr)
+      // _current_unit->move();
   }
 }
 
