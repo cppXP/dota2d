@@ -65,7 +65,8 @@ namespace dota2d
               setMap_min_pos(_minmap);
               setMap_max_pos(_maxmap);
               m_background_sprite.setTexture(bg_texture);
-              m_background_sprite.setPosition(bg_position);
+              m_background_sprite.setPosition(bg_position); //this funtion also setOrigin as center of sprite.
+              m_background_sprite.setOrigin(bg_position); //this funtion set origin speacily for this one. others origins are on center
 
               //init camera
               ptr_camera = new BaseCamera(c_pos, c_zoom, c_rotate, c_speed, c_mouseBorder, c_viewport);
