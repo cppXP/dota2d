@@ -53,9 +53,12 @@ void dota2d::BaseSpriteBar::set_baseSpriteBar_text(std::string _text)
 void dota2d::BaseSpriteBar::set_baseSpriteBar_percent(int _percentage)
 {
   if(_percentage>100)
-    m_spriteBar_value_percent = _percentage/100;
+    m_spriteBar_value_percent = 100;
   else
     m_spriteBar_value_percent = _percentage;
+
+
+  m_spriteBar_sprite_value.setSize(sf::Vector2f(m_spriteBar_value_percent, BASE_SPRITE_BAR_HEIGHT));
 }
 
 void dota2d::BaseSpriteBar::set_baseSpriteBar_position(sf::Vector2f _pos)
