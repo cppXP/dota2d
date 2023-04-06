@@ -66,7 +66,7 @@ void dota2d::Unit::render(sf::RenderWindow* _window)
   );
   heroname_text.setFont(herofont);
   heroname_text.setCharacterSize(24);
-  heroname_text.setFillColor(sf::Color::Red);
+  heroname_text.setFillColor(sf::Color::Black);
 
 
   (*this).m_sprite_hitpoint.set_baseSpriteBar_position
