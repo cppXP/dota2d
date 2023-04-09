@@ -63,32 +63,30 @@ void dota2d::BaseWindow::setWindow_position(sf::Vector2i _pos)
 
 
 
-std::string dota2d::BaseWindow::getWindow_title()
+std::string dota2d::BaseWindow::getWindow_title() const
 {
   return m_window_title;
 }
 
 
-int dota2d::BaseWindow::getWindow_width()
+int dota2d::BaseWindow::getWindow_width() const
 {
   return m_window_width;
 }
 
-int dota2d::BaseWindow::getWindow_height()
+int dota2d::BaseWindow::getWindow_height() const
 {
   return m_window_height;
 }
-// sf::RenderWindow dota2d::BaseWindow::getWindow()
-// {
-//   return m_window;
-// }
 
-sf::Vector2i dota2d::BaseWindow::getWindow_position()
+sf::Vector2i dota2d::BaseWindow::getWindow_position() const
 {
   return m_window_position;
 }
 
-void dota2d::BaseWindow::printWindow_stats()
+
+
+void dota2d::BaseWindow::printWindow_stats() const
 {
   std::cout << "\n basewindow::printWindowStatus():"
   // << "\n m_window_height : " << getWindow_height()

@@ -27,15 +27,13 @@ namespace dota2d
     void setWindow_position(sf::Vector2i);
 
 
-    std::string getWindow_title();
-    int getWindow_width();
-    int getWindow_height();
-    // sf::RenderWindow getWindow();
-    sf::Vector2i getWindow_position();
-    BaseWindow getBase_window();
+    std::string getWindow_title() const;
+    int getWindow_width() const;
+    int getWindow_height() const;
+    sf::Vector2i getWindow_position() const;
 
     //actions
-    void printWindow_stats();
+    void printWindow_stats() const;
 
   protected:
     int m_window_height;
