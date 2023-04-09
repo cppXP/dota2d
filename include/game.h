@@ -10,11 +10,9 @@
 #include "baseEvent.h"
 #include "side-buildings.h" //init buildings
 #include "hero.h"
-
 #include "hero-list.h"
-
-
 #include "functionTimer.h"
+#include "baseHud.h"
 // #include <array>
 
 
@@ -39,6 +37,9 @@ namespace dota2d
     //buildings
     SideBuildings m_radiant_buildings;
     SideBuildings m_dire_buildings;
+
+    //hud
+    BaseHud m_game_huds;
 
     // targets and selection hero/building
     Unit* m_current_unit = nullptr; //will hold player as myHero

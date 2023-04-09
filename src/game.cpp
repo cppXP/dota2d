@@ -40,10 +40,6 @@ void dota2d::Game::updateCamera()
     ptr_camera->doRotate(ptr_camera->getCamera_rotate());
 
 
-    //update hud to be incenter of camera [code copied inside init and commented]
-
-
-
       //is heron on center?
           // ptr_camera->doCenter(...);
 
@@ -57,6 +53,18 @@ void dota2d::Game::updateCamera()
 
 void dota2d::Game::draw()
 {
+
+  /*
+      in this funtion all renders/draws priority is important.
+      1.render map.
+      2.render heros/units/..
+      3.render buildings
+      4.render hud
+
+      because of Z we muss draw background things first then forward things later.
+  */
+
+
   // m_gameFunctionsTimer.init("game draw timer"); //count time since now untill call obj.finish()
 
   //map things
@@ -68,11 +76,13 @@ void dota2d::Game::draw()
       m_heros[x]->render(&m_window);
 
 
-
   //draw buildings
   m_radiant_buildings.renderBuidlings(&m_window);
   m_dire_buildings.renderBuidlings(&m_window);
 
+
+  //render hud
+  m_game_huds.render(m_window, (*ptr_camera)); //pass window to draw. pass camera to just get valeus as const
 
   // m_gameFunctionsTimer.finish();
 }
@@ -90,7 +100,7 @@ void dota2d::Game::init()
     sf::VideoMode(getWindow_width(),getWindow_height())
     , getWindow_title(), sf::Style::Default
   );
-        // m_window.setPosition(getWindow_position());
+  // m_window.setPosition(getWindow_position());
   m_window.setFramerateLimit(60);
   m_window.setKeyRepeatEnabled(false);
 
@@ -98,10 +108,11 @@ void dota2d::Game::init()
 
 
 
-  // Camera init is on constractor and Camera update has a function
+  // Camera initiliazation is on constractor and Camera update has a function
 
 
   // HUD init
+  m_game_huds.init();
   // BaseSprite m_hud_bottom_center;
   // BaseSprite m_hud_bottom_left;
   // BaseSprite m_hud_bottom_right;
