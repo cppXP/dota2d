@@ -22,15 +22,25 @@
 int main()
 {
 
-
-  dota2d::Game game
-  (
-    sf::Vector2i(MINX, MINY),sf::Vector2i(MAXX, MAXY), //map min&max
-    HEIGHT, WIDTH, TITLE, //window sf::VideoMode::getDesktopMode().width*1.50 sf::VideoMode::getDesktopMode().height*1.50
-    sf::Vector2i(CAMERA_POSX, CAMERA_POSY), CAMERA_ZOOM, CAMERA_ROTATE, CAMERA_SPEED, CAMERA_BORDER, sf::FloatRect(0,0, 1.0f, 1.0f), //camera
-    ASSEST_TERAIN_TEXTURE_3 , sf::Vector2f(BG_POSX, BG_POSY)
-  );
-
-  game.run();
+  try
+  {
+    dota2d::Game game
+    (
+      sf::Vector2i(MINX, MINY),sf::Vector2i(MAXX, MAXY), //map min&max
+      HEIGHT, WIDTH, TITLE, //window sf::VideoMode::getDesktopMode().width*1.50 sf::VideoMode::getDesktopMode().height*1.50
+      sf::Vector2i(CAMERA_POSX, CAMERA_POSY), CAMERA_ZOOM, CAMERA_ROTATE, CAMERA_SPEED, CAMERA_BORDER, sf::FloatRect(0,0, 1.0f, 1.0f), //camera
+      ASSEST_TERAIN_TEXTURE_3 , sf::Vector2f(BG_POSX, BG_POSY)
+    );
+    game.run();
+  }
+  catch (const std::exception& e) // caught by reference to base
+  {
+      std::cout << " a standard exception was caught, with message '"
+                << e.what() << "'\n";
+  }
+  catch(...)
+  {
+    std::cout << "idk whats happend error game borken." << std::endl;
+  }
   return 0;
 }
