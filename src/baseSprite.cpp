@@ -15,6 +15,14 @@ dota2d::BaseSprite::BaseSprite
     setPosition(_pos);
 }
 
+void dota2d::BaseSprite::setScale(float x_val,float y_val)
+{
+  m_sprite.setScale(x_val,y_val);
+}
+
+
+
+
 void dota2d::BaseSprite::setTexture(std::string _texture)
 {
   m_texture_path = _texture;
@@ -47,6 +55,12 @@ void dota2d::BaseSprite::setOrigin(sf::Vector2f _pos)
 {
   m_sprite.setOrigin(_pos);
 }
+
+sf::Vector2f dota2d::BaseSprite::getScale() const
+{
+  return m_sprite.getScale();
+}
+
 
 sf::Vector2f dota2d::BaseSprite::getOrigin() const
 {
