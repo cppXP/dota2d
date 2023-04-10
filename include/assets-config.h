@@ -1,4 +1,5 @@
-
+#ifndef ASSETS_CONFIG_HEADER
+#define ASSETS_CONFIG_HEADER
 
 // ============================================ SOUNDs ============================================
 
@@ -70,3 +71,6 @@
 #define ASSEST_HERO_DAZZLE "./assets/textures/hero/dazzle.png"
 #define ASSEST_HERO_CRYSTALMAIDEN "./assets/textures/hero/crystalmaiden.png"
 #define ASSEST_HERO_DISRUPTOR "./assets/textures/hero/disruptor.png"
+
+
+#endif
