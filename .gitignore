@@ -1,3 +1,4 @@
-*.gch
+*.h.gch
+*.o
 *size3-result.png
 
