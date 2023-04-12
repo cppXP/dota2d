@@ -39,6 +39,7 @@ namespace dota2d
    int getCamera_speed() const;
    float getCamera_rotate() const;
    sf::View getView() const;
+   sf::Vector2f getCamera_center() const;
 
 
    //actions

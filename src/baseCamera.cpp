@@ -35,6 +35,10 @@ sf::View dota2d::BaseCamera::getView() const
 {
   return m_camera;
 }
+sf::Vector2f dota2d::BaseCamera::getCamera_center() const
+{
+  return m_camera.getCenter();
+}
 
 void dota2d::BaseCamera::doReset(sf::FloatRect _value)
 {
