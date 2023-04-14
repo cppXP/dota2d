@@ -90,6 +90,7 @@ namespace dota2d
       int m_strength;
       int m_agility;
 
+    public:
       void setSilence_duration(int);
       void setStun_duration(int);
       void setUnattackable_duration(int);
