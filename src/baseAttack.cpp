@@ -36,6 +36,14 @@ void dota2d::BaseAttack::setMagicalDamage(int _value)
 }
 
 
+std::string dota2d::BaseAttack::getAttack_stats() const
+{
+  std::string result = "a.range: " + std::to_string(getAttackRange())
+    + "\na.speed: " +  std::to_string(getAttackSpeed())
+    + "\nd.magical: " +  std::to_string(getMagicalDamage())
+    + "\nd.physical: " +  std::to_string(getPhysicalDamage());
+  return result;
+}
 
 int dota2d::BaseAttack::getAttackRange() const
 {

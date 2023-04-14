@@ -27,6 +27,7 @@ namespace dota2d
       int getPhysicalDamage() const;
 
       void printAttack_stats() const;
+      std::string getAttack_stats() const;
   };
 }
 
