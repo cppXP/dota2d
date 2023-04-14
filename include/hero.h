@@ -3,7 +3,7 @@
 #include "unit.h"
 // #include "item.h"
 // #include "ability.h"
-// #include <vector>
+#include <vector>
 
 
 #define HERO_SPAWN_FACE dota2d::FaceDirectionType::South
@@ -17,6 +17,8 @@ namespace dota2d
   protected:
     int m_dead_duration;
     int m_level;
+    int m_kill_board[5] = {0,0,0,0,0}; //kills, deads, assists, lasthit, denied
+
     // vector<Hero> m_kills;
     // vector<int> m_deads;
     // vector<int> m_assists;
@@ -61,6 +63,34 @@ namespace dota2d
         m_dead_duration =  _dead_duration;
     }
 
+
+    int getLevel() const
+    {
+      return m_level;
+    }
+
+    std::string getKill_stats() const
+    {
+      return "K: " + std::to_string(m_kill_board[0]) +
+             "\nD: " + std::to_string(m_kill_board[1]) +
+             "\nA: "+ std::to_string(m_kill_board[2]) +
+             "\nLH: "+ std::to_string(m_kill_board[3]) +
+             "\nDN: "+ std::to_string(m_kill_board[4]);
+    }
+
+
+    template <typename TX>
+    dota2d::Hero operator=(const TX& obj)
+    {
+      Hero temp_hero;
+      temp_hero.setHitpoint(obj.getHitpoint());
+      temp_hero.setMaxHitpoint(obj.getMaxHitpoint());
+      temp_hero.setMana(obj.getMana());
+      temp_hero.setMaxMana(obj.getMaxMana());
+      temp_hero.setName(obj.getName());
+      return temp_hero;
+      std::cout << "object converted into Hero type.\n";
+    }
 
   };
 }
