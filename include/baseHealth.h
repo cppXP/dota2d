@@ -25,6 +25,7 @@ namespace dota2d
       float m_magical_rasistant;
 
 
+    public:
       //rasistant
       void setMagicRasistant(float);
       void setPhysicRasistant(float);

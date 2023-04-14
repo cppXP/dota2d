@@ -16,6 +16,7 @@ namespace dota2d
       int m_physical_damage;
       int m_magical_damage;
 
+    public:
       void setAttackRange(int);
       void setAttackSpeed(int);
       void setPhysicalDamage(int);

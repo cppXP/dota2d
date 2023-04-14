@@ -20,6 +20,7 @@ namespace dota2d
       int m_max_mana;
       float m_mana_regen;
 
+    public:
       //mana
       void setMana(int);
       void setManaRegen(float);
