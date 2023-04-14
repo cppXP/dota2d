@@ -82,7 +82,15 @@ void dota2d::Game::draw()
 
 
   //render hud
-  m_game_huds.render(m_window, (*ptr_camera)); //pass window to draw. pass camera to just get valeus as const
+  if(m_current_hero != nullptr && m_current_unit == nullptr)
+    m_game_huds.render<Hero> (m_window, (*ptr_camera), (*m_current_hero)); //pass window to draw. pass camera to just get valeus as const
+  else if(m_current_unit != nullptr && m_current_hero == nullptr)
+    m_game_huds.render<Unit> (m_window, (*ptr_camera), (*m_current_unit));
+  else
+
+
+
+    std::cout << "current selected is a buidling. or can not recognize.. \n";
 
   // m_gameFunctionsTimer.finish();
 }
@@ -113,48 +121,25 @@ void dota2d::Game::init()
 
   // HUD init
   m_game_huds.init();
-  // BaseSprite m_hud_bottom_center;
-  // BaseSprite m_hud_bottom_left;
-  // BaseSprite m_hud_bottom_right;
-  // m_hud_bottom_left.setTexture(ASSEST_GAME_HUD_LEFT_BOTTOM);
-  // m_hud_bottom_left.setPosition(sf::Vector2f(0,0));
-  //
-  // m_hud_bottom_right.setTexture(ASSEST_GAME_HUD_RIGHT_BOTTOM);
-  // m_hud_bottom_right.setPosition(sf::Vector2f(0,0));
-  //
-  // m_hud_bottom_center.setTexture(ASSEST_GAME_HUD_CENTER_BOTTOM);
-  // m_hud_bottom_center.setPosition(sf::Vector2f(0,0));
-      //hud things
-      // m_window.draw(m_hud_bottom_left.getSprite());
-      // m_window.draw(m_hud_bottom_right.getSprite());
-      // m_window.draw(m_hud_bottom_center.getSprite());
-      //update hud to be incenter of camera
-      // m_hud_bottom_left.setPosition
-      // (
-      //     sf::Vector2f
-      //     (
-      //       (ptr_camera->getCamera_position().x+100) ,
-      //       (ptr_camera->getCamera_position().y+500)
-      //     )
-      // );
-
-
-
-
-
-
 
   // Buildings init
   m_radiant_buildings.init_radiant();
   m_dire_buildings.init_dire();
 
 
-
-
-
   //heros init
   m_heros[0] = new Axe;
   m_heros[1] = new Dazzle;
+
+  m_current_hero = m_heros[1];
+
+
+
+  //untis
+  m_dire_units[0] = new MeleeCreep;
+  // m_current_unit = m_dire_units[0];
+
+
   m_gameFunctionsTimer.finish();
 }
 

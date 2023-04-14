@@ -11,6 +11,8 @@
 #include "side-buildings.h" //init buildings
 #include "hero.h"
 #include "hero-list.h"
+#include "unit-list.h"
+
 #include "functionTimer.h"
 #include "baseHud.h"
 // #include <array>
@@ -42,12 +44,15 @@ namespace dota2d
     BaseHud m_game_huds;
 
     // targets and selection hero/building
+    Hero* m_current_hero = nullptr;
     Unit* m_current_unit = nullptr; //will hold player as myHero
     Unit* m_target_unit = nullptr; //will hold clicked/targeted enemy
     BaseBuilding* m_target_building = nullptr; //will hold clicked/targeted enemy building
 
     //heroes
     Hero* m_heros[2] = {nullptr,nullptr};
+    Unit* m_dire_units[2] = {nullptr,nullptr};
+    // std::array<Unit*, 5> m_units =
     // std::array<Hero*, 10> m_heros =
 
 
@@ -81,6 +86,7 @@ namespace dota2d
         delete m_target_building;
         delete m_current_unit;
         delete m_heros[2];
+        delete m_current_hero;
       }
 
 
