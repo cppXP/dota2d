@@ -41,6 +41,7 @@ namespace dota2d
   void BaseMana::setMana(int _value)
   {
     m_mana = _value;
+    // m_sprite_mana.set_baseSpriteBar_percent( m_mana / (getMaxMana()/100) );
   }
   void BaseMana::setManaRegen(float _value)
   {
@@ -49,6 +50,9 @@ namespace dota2d
   void BaseMana::setMaxMana(int _value)
   {
     m_max_mana = _value;
+    // if(getMana()>m_max_mana)
+      // setMana(m_max_mana);
+    // m_sprite_mana.set_baseSpriteBar_percent( getMana() / (m_max_mana/100) );
   }
   int BaseMana::getMana() const
   {

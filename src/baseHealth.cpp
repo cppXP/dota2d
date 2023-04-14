@@ -79,6 +79,9 @@ float dota2d::BaseHealth::getPhysicRasistant() const
 void dota2d::BaseHealth::setHitpoint(int _value)
 {
   m_hitpoint = _value;
+  // const int max_hp = getMaxHitpoint()/100;
+  // int percent = m_hitpoint / max_hp;
+  // m_sprite_hitpoint.set_baseSpriteBar_percent(percent);
 }
 void dota2d::BaseHealth::setHitpointRegen(float _value)
 {
@@ -87,6 +90,10 @@ void dota2d::BaseHealth::setHitpointRegen(float _value)
 void dota2d::BaseHealth::setMaxHitpoint(int _value)
 {
   m_max_hitpoint = _value;
+  // if(getHitpoint()>m_max_hitpoint)
+    // setHitpoint(m_max_hitpoint);
+  // m_sprite_hitpoint.set_baseSpriteBar_percent( getHitpoint() / (m_max_hitpoint/100) );
+
 }
 int dota2d::BaseHealth::getHitpoint() const
 {
