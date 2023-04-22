@@ -8,6 +8,7 @@
 - dota2.gamepedia.com //buildings texture.
 - wiki.teamliquid.net //game info.
 - draw.io //draw UML
+- miro.com // write/draw Algorithms board address: (https://miro.com/app/board/uXjVMQJMdPY=/)
 
 ### Etc:
 - krita //Photo-editor.
