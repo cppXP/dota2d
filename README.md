@@ -1,6 +1,6 @@
 # dota22d
 ## buidlings & camera:
-<img src=https://github.com/cppXP/dota2d/tree/master/docs/screenshots/ss.jpg/>
+<img src=https://github.com/cppXP/dota2d/blob/master/ss.jpg/>
 
 ## Used Tools:
 ### Websites:
